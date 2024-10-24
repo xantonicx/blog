@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title_tag }}{% endblock %}
+
+
+
+{% block content %}
+    <center>
+    <h1>Standard Calculator</h1>
+    <form method="post">
+        {% csrf_token %}
+
+        <input type="number" name="num1" placeholder="0" step="any" required>
+        <input type="number" name="num2" placeholder="0" step="any" required>
+
+        <br/><br/>
+
+        <button class="btn btn-secondary" type="submit" name="operation" value="add">Add</button>
+        <button class="btn btn-secondary" type="submit" name="operation" value="subtract">Subtract</button>
+        <button class="btn btn-secondary" type="submit" name="operation" value="multiply">Multiply</button>
+        <button class="btn btn-secondary" type="submit" name="operation" value="divide">Divide</button>
+        <br/><br/>
+        <button class="btn btn-secondary" type="submit" name="operation" value="sqrt">Square Root</button>
+        <button class="btn btn-secondary" type="submit" name="operation" value="square">Square</button>
+        <button class="btn btn-secondary" type="submit" name="operation" value="reciprocal">Reciprocal</button>
+        <button class="btn btn-secondary" type="submit" name="operation" value="percentage">Percentage</button>
+        <br/><br/>
+
+    </form>
+    {% if result7 %}
+
+        <h1>Result: {{ result7 }}</h1>
+
+
+    {% endif %}
+</center>
+        	</div>
+        </div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+{% endblock %}

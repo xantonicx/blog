@@ -1,0 +1,780 @@
+
+
+:root {
+  --bs-columns: 12; /* Set to the desired number of columns */
+}
+
+.themed-grid-col {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  /*background-color: rgba(112.520718, 44.062154, 249.437846, .15);*/
+  border: 2px solid rgba(250, 250, 250, .3);
+}
+
+.block0 {
+  background-color: #2D2648;
+  border: 4px solid #CCC;
+  }
+
+.themed-container {
+  padding: .75rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(22, 22, 222, .15);
+  border: 22px solid rgba(66, 66, 33, .3);
+  }
+
+  .hexFFFFFF {
+  background-color: #555555;
+  border: 4px solid #000;
+  }
+
+  
+
+
+ /* /////////////////////////////ROW 1 */
+.hex000000 {
+  background-color: #000000;
+  border: 4px solid #000;
+  }
+.hex660000 {
+  background-color: #660000;
+  border: 4px solid #000;
+  }
+.hex990000 {
+  background-color: #990000;
+  border: 4px solid #000;
+  }
+.hexCC0000 {
+  background-color: #CC0000;
+  border: 4px solid #000;
+  }
+.hexFF0000 {
+  background-color: #FF0000;
+  border: 4px solid #000;
+  }
+.hexFF3333 {
+  background-color: #FF3333;
+  border: 4px solid #000;
+  }
+.hexFF6666 {
+  background-color: #FF6666;
+  border: 4px solid #000;
+  }
+.hexFF9999 {
+  background-color: #FF9999;
+  border: 4px solid #000;
+  }
+.hexFFCCCC {
+  background-color: #FFCCCC;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 2 */
+.hex0E0E0E {
+  background-color: #0E0E0E;
+  border: 4px solid #000;
+  }
+.hex662200 {
+  background-color: #662200;
+  border: 4px solid #000;
+  }
+.hex993300 {
+  background-color: #993300;
+  border: 4px solid #000;
+  }
+.hexCC4400{
+  background-color: #CC4400;
+  border: 4px solid #000;
+  }
+.hexFF5500 {
+  background-color: #FF5500;
+  border: 4px solid #000;
+  }
+.hexFF7632 {
+  background-color: #FF7632;
+  border: 4px solid #000;
+  }
+.hexFF9864 {
+  background-color: #FF9864;
+  border: 4px solid #000;
+  }
+.hexFFB996 {
+  background-color: #FFB996;
+  border: 4px solid #000;
+  }
+.hexFFDBC8 {
+  background-color: #FFDBC8;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 3 */
+.hex1C1C1C {
+  background-color: #1C1C1C;
+  border: 4px solid #000;
+  }
+.hex664400 {
+  background-color: #664400;
+  border: 4px solid #000;
+  }
+
+.hex996600 {
+  background-color: #996600;
+  border: 4px solid #000;
+  }
+.hexCC8800{
+  background-color: #CC8800;
+  border: 4px solid #000;
+  }
+.hexFFAA00 {
+  background-color: #FFAA00;
+  border: 4px solid #000;
+  }
+.hexFFAA32 {
+  background-color: #FFAA32;
+  border: 4px solid #000;
+  }
+.hexFFCB64 {
+  background-color: #FFCB64;
+  border: 4px solid #000;
+  }
+.hexFFDB96 {
+  background-color: #FFDB96;
+  border: 4px solid #000;
+  }
+.hexFFECC8 {
+  background-color: #FFECC8;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 4 */
+.hex2A2A2A {
+  background-color: #2A2A2A;
+  border: 4px solid #000;
+  }
+.hex666600 {
+  background-color: #666600;
+  border: 4px solid #000;
+  }
+
+.hex999900 {
+  background-color: #999900;
+  border: 4px solid #000;
+  }
+.hexCCCC00{
+  background-color: #CCCC00;
+  border: 4px solid #000;
+  }
+.hexFFFF00 {
+  background-color: #FFFF00;
+  border: 4px solid #000;
+  }
+.hexFFFE32 {
+  background-color: #FFFE32;
+  border: 4px solid #000;
+  }
+.hexFFFE64 {
+  background-color: #FFFE64;
+  border: 4px solid #000;
+  }
+.hexFFFD96 {
+  background-color: #FFFD96;
+  border: 4px solid #000;
+  }
+.hexFFFDC8 {
+  background-color: #FFFDC8;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 5 */
+.hex393939 {
+  background-color: #393939;
+  border: 4px solid #000;
+  }
+.hex446600 {
+  background-color: #446600;
+  border: 4px solid #000;
+  }
+
+.hex669900 {
+  background-color: #669900;
+  border: 4px solid #000;
+  }
+.hex88CC00{
+  background-color: #88CC00;
+  border: 4px solid #000;
+  }
+.hexAAFF00 {
+  background-color: #AAFF00;
+  border: 4px solid #000;
+  }
+.hexBBFE32 {
+  background-color: #BBFE32;
+  border: 4px solid #000;
+  }
+.hexCCFE64 {
+  background-color: #CCFE64;
+  border: 4px solid #000;
+  }
+.hexDDFD96 {
+  background-color: #DDFD96;
+  border: 4px solid #000;
+  }
+.hexEEFDC8 {
+  background-color: #EEFDC8;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 6 */
+.hex474747 {
+  background-color: #474747;
+  border: 4px solid #000;
+  }
+.hex116600 {
+  background-color: #116600;
+  border: 4px solid #000;
+  }
+
+.hex199900 {
+  background-color: #199900;
+  border: 4px solid #000;
+  }
+.hex22CC00{
+  background-color: #22CC00;
+  border: 4px solid #000;
+  }
+.hex2AFF00 {
+  background-color: #2AFF00;
+  border: 4px solid #000;
+  }
+.hex55FE32 {
+  background-color: #55FE32;
+  border: 4px solid #000;
+  }
+.hex7FFE64 {
+  background-color: #7FFE64;
+  border: 4px solid #000;
+  }
+.hexAAFD96 {
+  background-color: #AAFD96;
+  border: 4px solid #000;
+  }
+.hexD4FDC8 {
+  background-color: #D4FDC8;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 7 */
+.hex555555 {
+  background-color: #555555;
+  border: 4px solid #000;
+  }
+.hex006611 {
+  background-color: #006611;
+  border: 4px solid #000;
+  }
+
+.hex00991A {
+  background-color: #00991A;
+  border: 4px solid #000;
+  }
+.hex00CC22{
+  background-color: #00CC22;
+  border: 4px solid #000;
+  }
+.hex00FF2B {
+  background-color: #00FF2B;
+  border: 4px solid #000;
+  }
+.hex33FE54 {
+  background-color: #33FE54;
+  border: 4px solid #000;
+  }
+.hex66FE7E {
+  background-color: #66FE7E;
+  border: 4px solid #000;
+  }
+.hex99FDA7 {
+  background-color: #99FDA7;
+  border: 4px solid #000;
+  }
+.hexCCFDD1 {
+  background-color: #CCFDD1;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 8 */
+.hex636363 {
+  background-color: #636363;
+  border: 4px solid #000;
+  }
+.hex006633 {
+  background-color: #006633;
+  border: 4px solid #000;
+  }
+
+.hex00994D {
+  background-color: #00994D;
+  border: 4px solid #000;
+  }
+.hex00CC66{
+  background-color: #00CC66;
+  border: 4px solid #000;
+  }
+.hex00FF80 {
+  background-color: #00FF80;
+  border: 4px solid #000;
+  }
+.hex33FE98 {
+  background-color: #33FE98;
+  border: 4px solid #000;
+  }
+.hex66FE98 {
+  background-color: #66FE98;
+  border: 4px solid #000;
+  }
+.hex99FDC9 {
+  background-color: #99FDC9;
+  border: 4px solid #000;
+  }
+.hexCCFDE2 {
+  background-color: #CCFDE2;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 9 */
+.hex717171 {
+  background-color: #717171;
+  border: 4px solid #000;
+  }
+.hex006655 {
+  background-color: #006655;
+  border: 4px solid #000;
+  }
+
+.hex00997F {
+  background-color: #00997F;
+  border: 4px solid #000;
+  }
+.hex00CCAA{
+  background-color: #00CCAA;
+  border: 4px solid #000;
+  }
+.hex00FFD4 {
+  background-color: #00FFD4;
+  border: 4px solid #000;
+  }
+.hex33FEDC {
+  background-color: #33FEDC;
+  border: 4px solid #000;
+  }
+.hex66FEE3 {
+  background-color: #66FEE3;
+  border: 4px solid #000;
+  }
+.hex99FDEB {
+  background-color: #99FDEB;
+  border: 4px solid #000;
+  }
+.hexCCFDF2 {
+  background-color: #CCFDF2;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 10 */
+.hex7F7F7F {
+  background-color: #7F7F7F;
+  border: 4px solid #000;
+  }
+.hex005566 {
+  background-color: #005566;
+  border: 4px solid #000;
+  }
+
+.hex007F99 {
+  background-color: #007F99;
+  border: 4px solid #000;
+  }
+.hex00AACC{
+  background-color: #00AACC;
+  border: 4px solid #000;
+  }
+.hex00D4FF {
+  background-color: #00D4FF;
+  border: 4px solid #000;
+  }
+.hex33DCFE {
+  background-color: #33DCFE;
+  border: 4px solid #000;
+  }
+.hex66E4FD {
+  background-color: #66E4FD;
+  border: 4px solid #000;
+  }
+.hex99ECFC {
+  background-color: #99ECFC;
+  border: 4px solid #000;
+  }
+.hexCCF4FB {
+  background-color: #CCF4FB;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 11 */
+.hex8E8E8E {
+  background-color: #8E8E8E;
+  border: 4px solid #000;
+  }
+.hex004466 {
+  background-color: #004466;
+  border: 4px solid #000;
+  }
+.hex006699 {
+  background-color: #006699;
+  border: 4px solid #000;
+  }
+.hex0088CC {
+  background-color: #0088CC;
+  border: 4px solid #000;
+  }
+.hex00AAFF {
+  background-color: #00AAFF;
+  border: 4px solid #000;
+  }
+.hex33BAFE {
+  background-color: #33BAFE;
+  border: 4px solid #000;
+  }
+.hex66CBFD {
+  background-color: #66CBFD;
+  border: 4px solid #000;
+  }
+.hex99DBFC {
+  background-color: #99DBFC;
+  border: 4px solid #000;
+  }
+.hexCCECFB {
+  background-color: #CCECFB;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 12 */
+.hex9C9C9C {
+  background-color: #9C9C9C;
+  border: 4px solid #000;
+  }
+.hex002266 {
+  background-color: #002266;
+  border: 4px solid #000;
+  }
+.hex003399 {
+  background-color: #003399;
+  border: 4px solid #000;
+  }
+.hex0044CC {
+  background-color: #0044CC;
+  border: 4px solid #000;
+  }
+.hex0055FF {
+  background-color: #0055FF;
+  border: 4px solid #000;
+  }
+.hex3376FE {
+  background-color: #3376FE;
+  border: 4px solid #000;
+  }
+.hex6698FD {
+  background-color: #6698FD;
+  border: 4px solid #000;
+  }
+.hex99B9FC {
+  background-color: #99B9FC;
+  border: 4px solid #000;
+  }
+.hexCCDBFB {
+  background-color: #CCDBFB;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 13 */
+.hexAAAAAA {
+  background-color: #AAAAAA;
+  border: 4px solid #000;
+  }
+.hex000066 {
+  background-color: #000066;
+  border: 4px solid #000;
+  }
+
+.hex000099 {
+  background-color: #000099;
+  border: 4px solid #000;
+  }
+.hex0000CC{
+  background-color: #0000CC;
+  border: 4px solid #000;
+  }
+.hex0000FF {
+  background-color: #0000FF;
+  border: 4px solid #000;
+  }
+.hex3332FE {
+  background-color: #3332FE;
+  border: 4px solid #000;
+  }
+.hex6665FD {
+  background-color: #6665FD;
+  border: 4px solid #000;
+  }
+.hex9997FC {
+  background-color: #9997FC;
+  border: 4px solid #000;
+  }
+.hexCCCAFB {
+  background-color: #CCCAFB;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 14 */
+.hexB8B8B8 {
+  background-color: #B8B8B8;
+  border: 4px solid #000;
+  }
+.hex220066 {
+  background-color: #220066;
+  border: 4px solid #000;
+  }
+
+.hex330099 {
+  background-color: #330099;
+  border: 4px solid #000;
+  }
+.hex4400CC {
+  background-color: #4400CC;
+  border: 4px solid #000;
+  }
+.hex5500FF {
+  background-color: #5500FF;
+  border: 4px solid #000;
+  }
+.hex7732FE {
+  background-color: #7732FE;
+  border: 4px solid #000;
+  }
+.hex9965FD {
+  background-color: #9965FD;
+  border: 4px solid #000;
+  }
+.hexBB97FC {
+  background-color: #BB97FC;
+  border: 4px solid #000;
+  }
+.hexDDCAFB {
+  background-color: #DDCAFB;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 15 */
+.hexC6C6C6 {
+  background-color: #C6C6C6;
+  border: 4px solid #000;
+  }
+.hex440066 {
+  background-color: #440066;
+  border: 4px solid #000;
+  }
+
+.hex660099 {
+  background-color: #660099;
+  border: 4px solid #000;
+  }
+.hex8800CC{
+  background-color: #8800CC;
+  border: 4px solid #000;
+  }
+.hexAA00FF {
+  background-color: #AA00FF;
+  border: 4px solid #000;
+  }
+.hexBB32FE {
+  background-color: #BB32FE;
+  border: 4px solid #000;
+  }
+.hexCC56FD {
+  background-color: #CC56FD;
+  border: 4px solid #000;
+  }
+.hexDD97FC {
+  background-color: #DD97FC;
+  border: 4px solid #000;
+  }
+.hexEECAFB {
+  background-color: #EECAFB;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 16 */
+.hexD4D4D4 {
+  background-color: #D4D4D4;
+  border: 4px solid #000;
+  }
+.hex660066 {
+  background-color: #660066;
+  border: 4px solid #000;
+  }
+
+.hex990099 {
+  background-color: #990099;
+  border: 4px solid #000;
+  }
+.hexCC00CC{
+  background-color: #CC00CC;
+  border: 4px solid #000;
+  }
+.hexFF00FF {
+  background-color: #FF00FF;
+  border: 4px solid #000;
+  }
+.hexFF32FE {
+  background-color: #FF32FE;
+  border: 4px solid #000;
+  }
+.hexFF65FD {
+  background-color: #FF65FD;
+  border: 4px solid #000;
+  }
+.hexFF97FC {
+  background-color: #FF97FC;
+  border: 4px solid #000;
+  }
+.hexFFCAFB {
+  background-color: #FFCAFB;
+  border: 4px solid #000;
+  }
+
+/* /////////////////////////////ROW 17 */
+  .hexE3E3E3 {
+  background-color: #E3E3E3;
+  border: 4px solid #000;
+  }
+.hex660044 {
+  background-color: #660044;
+  border: 4px solid #000;
+  }
+
+.hex990066 {
+  background-color: #990066;
+  border: 4px solid #000;
+  }
+.hexCC0088 {
+  background-color: #CC0088;
+  border: 4px solid #000;
+  }
+.hexFF00AA {
+  background-color: #FF00AA;
+  border: 4px solid #000;
+  }
+.hexFF32BA {
+  background-color: #FF32BA;
+  border: 4px solid #000;
+  }
+.hexFF65CA {
+  background-color: #FF65CA;
+  border: 4px solid #000;
+  }
+.hexFF97DA {
+  background-color: #FF97DA;
+  border: 4px solid #000;
+  }
+.hexFFCAEA {
+  background-color: #FFCAEA;
+  border: 4px solid #000;
+  }
+
+
+/* /////////////////////////////ROW 18 */
+  .hexF1F1F1 {
+  background-color: #F1F1F1;
+  border: 4px solid #000;
+  }
+.hex660022 {
+  background-color: #660022;
+  border: 4px solid #000;
+  }
+.hex990033 {
+  background-color: #990033;
+  border: 4px solid #000;
+  }
+.hexCC0044 {
+  background-color: #CC0044;
+  border: 4px solid #000;
+  }
+.hexFF0055 {
+  background-color: #FF0055;
+  border: 4px solid #000;
+  }
+.hexFF3276 {
+  background-color: #FF3276;
+  border: 4px solid #000;
+  }
+.hexFF6597 {
+  background-color: #FF6597;
+  border: 4px solid #000;
+  }
+.hexFF97B8 {
+  background-color: #FF97B8;
+  border: 4px solid #000;
+  }
+.hexFFCAD9 {
+  background-color: #FFCAD9;
+  border: 4px solid #000;
+  }
+
+
+/* /////////////////////////////ROW 19 */
+  .hexFFFFFF {
+  background-color: #FFFFFF;
+  border: 4px solid #000;
+  }
+.hex660011 {
+  background-color: #660011;
+  border: 4px solid #000;
+  }
+.hex990019 {
+  background-color: #990019;
+  border: 4px solid #000;
+  }
+.hexCC0022 {
+  background-color: #CC0022;
+  border: 4px solid #000;
+  }
+.hexFF002A {
+  background-color: #FF002A;
+  border: 4px solid #000;
+  }
+.hexFF3254 {
+  background-color: #FF3254;
+  border: 4px solid #000;
+  }
+.hexFF657D {
+  background-color: #FF657D;
+  border: 4px solid #000;
+  }
+.hexFF97A7 {
+  background-color: #FF97A7;
+  border: 4px solid #000;
+  }
+.hexFFCAD0 {
+  background-color: #FFCAD0;
+  border: 4px solid #000;
+  }
+
+

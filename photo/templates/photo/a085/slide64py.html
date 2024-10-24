@@ -1,0 +1,1085 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title_tag }}{% endblock %}
+
+
+
+{% block content %}
+
+
+
+            <!-- Custom styles for this template>
+
+    <link href="{% static 'css/bodymain.css' %}" rel="stylesheet"-->
+
+<style>
+
+.p-5p32 {
+  padding: 32rem !important;
+}
+
+.p-5p24p35 {
+  padding: 24.35rem !important;
+}
+</style>
+
+
+
+<main>
+
+    <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Slideshow Eighty Five</h1>
+
+          <a href="{% url 'slide_a084' %}" class="btn btn-primary my-2">< Last Show</a>
+          <a href="{% url 'album_a085' %}" class="btn btn-success my-2">ALBUM</a>
+
+          <a href="{% url 'slidewheel' %}" class="btn btn-secondary my-2">List</a>
+
+          <a href="{% url 'slide_a086' %}" class="btn btn-primary my-2">Next Show ></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="14" aria-label="Slide 15"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="15" aria-label="Slide 16"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="16" aria-label="Slide 17"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="17" aria-label="Slide 18"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="18" aria-label="Slide 19"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="19" aria-label="Slide 20"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="20" aria-label="Slide 21"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="21" aria-label="Slide 22"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="22" aria-label="Slide 23"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="23" aria-label="Slide 24"></button>
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="24" aria-label="Slide 25"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="25" aria-label="Slide 26"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="26" aria-label="Slide 27"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="27" aria-label="Slide 28"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="28" aria-label="Slide 29"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="29" aria-label="Slide 30"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="30" aria-label="Slide 31"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="31" aria-label="Slide 32"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="32" aria-label="Slide 33"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="33" aria-label="Slide 34"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="34" aria-label="Slide 35"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="35" aria-label="Slide 36"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="36" aria-label="Slide 37"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="37" aria-label="Slide 38"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="38" aria-label="Slide 39"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="39" aria-label="Slide 40"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="40" aria-label="Slide 41"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="41" aria-label="Slide 42"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="42" aria-label="Slide 43"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="43" aria-label="Slide 44"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="44" aria-label="Slide 45"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="45" aria-label="Slide 46"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="46" aria-label="Slide 47"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="47" aria-label="Slide 48"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="48" aria-label="Slide 49"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="49" aria-label="Slide 50"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="50" aria-label="Slide 51"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="51" aria-label="Slide 52"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="52" aria-label="Slide 53"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="53" aria-label="Slide 54"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="54" aria-label="Slide 55"></button>
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="55" aria-label="Slide 56"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="56" aria-label="Slide 57"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="57" aria-label="Slide 58"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="58" aria-label="Slide 59"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="59" aria-label="Slide 60"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="60" aria-label="Slide 61"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="61" aria-label="Slide 62"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="62" aria-label="Slide 63"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="63" aria-label="Slide 64"></button>
+    </div>
+
+
+
+
+
+<div class="carousel-inner">
+
+
+  <div class="carousel-item active">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/1.png' %});">
+          <div class="p-5p24p35">
+
+
+
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Image One</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="{% static 'assets/images/iverson-digital-64.png' %}" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>iversonrobotics</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>6-2024</small>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/2.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/3.png' %});">
+          <div class="p-5p32">
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/4.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/5.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/6.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/7.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/8.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/9.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/10.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/11.png' %});">
+          <div class="p-5p32">
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/12.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/13.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/14.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/15.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/16.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/17.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/18.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/19.png' %});">
+          <div class="p-5p32">
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/20.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/21.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/22.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/23.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/24.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/25.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/26.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/27.png' %});">
+          <div class="p-5p32">
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/28.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/29.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/30.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/31.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/32.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/33.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/34.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/35.png' %});">
+          <div class="p-5p32">
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/36.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/37.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/38.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/39.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/40.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/41.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/42.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/43.png' %});">
+          <div class="p-5p32">
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/44.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/45.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/46.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/47.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/48.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/49.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/50.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/51.png' %});">
+          <div class="p-5p32">
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/52.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/53.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/54.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/55.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/56.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/57.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/58.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/59.png' %});">
+          <div class="p-5p32">
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/60.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/61.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/62.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/63.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="h-100 overflow-hidden" style="background-image: url({% static 'assets/ai-art/a085/content/64.png' %});">
+          <div class="p-5p32">
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+ 
+
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+</main>
+
+{% endblock %}

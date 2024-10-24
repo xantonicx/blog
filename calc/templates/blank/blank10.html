@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title_tag }}{% endblock %}
+
+
+
+{% block content %}
+
+<!---Copilot -   bootstrap 2 column form A      -->
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-3">
+            <!-- First column content -->
+            <label for="input1">link to external webpage on global internet. (no url or view required)</label>    
+            <br/>
+            <a class="btn btn-primary" href="https://iversondigital-6a62a77b5ccf.herokuapp.com/" role= "button">HTTPS iversondigital</a>
+            <br/><br/>
+            </div>
+        <div class="col-md-3">
+            <!-- Second column content -->
+
+            <br/><br/>
+        </div>
+
+<main>
+
+
+    <hr class="my-4">
+
+    <h2 class="mt-4">Mixed: mobile, tablet, and desktop</h2>
+    <div class="row mb-3 text-center">
+      <div class="col-sm-6 col-lg-8 themed-grid-col"><label for="input2">django frame link to page in same folder</label>
+            <br/><br/>
+            <a class="btn btn-primary" href="{% url 'blank5' %}" role="button">blank5</a></div>
+
+      <div class="col-6 col-lg-4 themed-grid-col"><label for="input1">link to static image is static folder (no url or view required)</label>
+            <br/>
+            <a class="btn btn-primary" href="{% static 'assets/images/twbs.png' %}" role=  "button">bootstrap-logo</a></div>
+    </div>
+
+
+
+    <div class="row mb-3 text-center">
+      <div class="col-6 col-sm-4 themed-grid-col"><label for="input2">django link to Link to Embedded You-Tube</label>   
+            <br/>
+            <a class="btn btn-primary" href="{% url 'yt_000001' %}" role="button">yt_000001</a></div>
+      <div class="col-6 col-sm-4 themed-grid-col"><label for="input2">django link to same page and refreshes this page only</label>   
+            <br/>
+            <a class="btn btn-primary" href="{% url 'blank10' %}" role="button">refresh</a></div>
+      <div class="col-6 col-sm-4 themed-grid-col"><label for="input1">link to static image is static folder (no url or view)</label>
+            <br/>
+            <a class="btn btn-primary" href="{% static 'assets/images/unicode-logo.jpeg' %}" role=  "button">unicode-logo</a></div>
+    </div>
+
+    <hr class="my-4">
+
+    <h2 class="mt-4">Mixed: mobile, tablet, and desktop</h2>
+    <div class="row mb-3 text-center">
+      <div class="col-sm-6 col-lg-8 themed-grid-col">.col-sm-6 .col-lg-8</div>
+      <div class="col-6 col-lg-4 themed-grid-col">.col-6 .col-lg-4</div>
+    </div>
+    <div class="row mb-3 text-center">
+      <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+      <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+      <div class="col-6 col-sm-4 themed-grid-col">.col-6 .col-sm-4</div>
+    </div>
+
+
+
+</main>
+{% endblock %}

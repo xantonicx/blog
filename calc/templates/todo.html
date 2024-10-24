@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Task</button>
+    </form>
+    <ul>
+        {% for item in todo_items %}
+            <li class="{% if item.completed %}completed{% endif %}">
+                <form method="POST" action="{% url 'toggle_todo' item.id %}">
+                    {% csrf_token %}
+                    <input type="checkbox" onchange="this.form.submit()" {% if item.completed %}checked{% endif %}>
+                    {{ item.task }}
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

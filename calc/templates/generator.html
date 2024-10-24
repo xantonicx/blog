@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title_tag }}{% endblock %}
+
+
+
+{% block content %}
+
+
+
+    <h1>Random Password Generator</h1>
+    <form method="post">
+        {% csrf_token %}
+
+
+        <button class="btn btn-info" type="submit">Generate Password</button>
+    </form>
+    {% if password %}
+        <p>Your generated password: <h3><strong>{{ password }}</strong></h3></p>
+    {% endif %}
+
+
+{% endblock %}

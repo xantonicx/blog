@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title_tag }}{% endblock %}
+
+
+
+{% block content %}
+    <center>
+
+    <h1>Calculate Trigonometric Functions</h1>
+    <br/><br/>
+    <form action="" method="post">
+        {% csrf_token %}
+        <h1><label for="angle">Angle (in degrees):</label></h1>
+
+        <input type="text" id="angle" name="angle">
+        <input type="submit" class="btn btn-danger" value="Calculate">
+    </form>
+
+
+    {% if angle_radians %}
+        <h1>Results for {{ angle_degrees }} Degrees </h1>
+    <br/><br/>
+         <h1>   radians = degrees x π/180 </h1>
+         <h1>    pi(π) = 3.1415926535898  </h1>
+        <h2>
+        ({{ angle_radians }} Radians)
+        
+        <br/><br/>
+        <p>Sine: {{ sin_value }}</p><p>opposite over hypotenuse</p>
+        <p>Cosine: {{ cos_value }}</p><p>adjacent over hypotenuse</p>
+        <p>Tangent: {{ tan_value }}</p><p>opposite over adjacent</p>
+        <br/><br/>
+        <p>Cosecant: {{ csc_value }}</p><p>hypotenuse over opposite</p>
+        <p>Secant: {{ sec_value }}</p><p>hypotenuse over adjacent</p>
+        <p>Cotangent: {{ cot_value }}</p><p>adjacent over opposite</p>
+        <br/><br/>
+        <p>Arcsine (asin): {{ arcsin_value }}</p><p></p>
+        <p>Arccosine (acos): {{ arccos_value }}</p><p></p>
+        <p>Arctangent (atan): {{ arctan_value }}</p><p></p>
+    {% endif %}
+    </h2>
+    <a href="{% url 'trig' %}">Try another angle</a>
+        
+</center>
+<br/><br/><br/><br/><br/>
+{% endblock %}

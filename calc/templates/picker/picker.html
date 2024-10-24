@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title_tag }}{% endblock %}
+
+
+
+{% block content %}
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"/>
+
+
+    <!-- Analytics -->
+    <script async src="https://ackee.reinisch.io/tracker.js" data-ackee-server="https://ackee.reinisch.io" data-ackee-domain-id="6536a4cf-bb51-4901-ad17-707906e53ff8"></script>
+
+    <title>Pickr</title>
+
+    <!-- Icons -->
+    <link rel="icon" href="{% static 'assets/images/favicon-p.png' %}"/>
+    <link rel="fluid-icon" href="{% static 'assets/images/favicon-p.png' %}"/>
+    <link rel="apple-touch-icon" href="{% static 'assets/images/favicon-p.png' %}"/>
+
+    <!-- Style sheets -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+    <link href="{% static 'css/classic.min.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/monolith.min.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/nano.min.css' %}" rel="stylesheet"/>
+
+        <!-- Custom styles for this template -->
+    <link href="{% static 'css/color-grid.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+<main>
+
+<header>
+    <h1>Color Picker</h1>
+
+</header>
+<br/>
+
+    <div class="theme-container"></div>
+    <div class="pickr-container"></div>
+    <p>(Tap it)</p>
+
+    <div class="hex000000 themed-container"></div>
+    <div class="hex000000 themed-container"></div>
+    <div class="hex000000 themed-container"></div>
+    <div class="hex000000 themed-container"></div>
+
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">1</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">#000000</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">#</div>
+  <div class="hex660000 text-white col-sm-1 themed-grid-col">#660000</div>
+  <div class="hex990000 col-sm-1 themed-grid-col">#990000</div>
+  <div class="hexCC0000 col-sm-1 themed-grid-col">#CC0000</div>
+  <div class="hexFF0000 col-sm-1 themed-grid-col">#FF0000</div>
+  <div class="hexFF3333 col-sm-1 themed-grid-col">#FF3333</div>
+  <div class="hexFF6666 col-sm-1 themed-grid-col">#FF6666</div>
+  <div class="hexFF9999 col-sm-1 themed-grid-col">#FF9999</div>
+  <div class="hexFFCCCC col-sm-1 themed-grid-col">#FFCCCC</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"> </div>
+</div>
+
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">2</div>
+  <div class="hex0E0E0E text-white col-sm-1 themed-grid-col">#0E0E0E</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex662200 text-white col-sm-1 themed-grid-col">#662200</div>
+  <div class="hex993300 col-sm-1 themed-grid-col">#993300</div>
+  <div class="hexCC4400 col-sm-1 themed-grid-col">#CC4400</div>
+  <div class="hexFF5500 col-sm-1 themed-grid-col">#FF5500</div>
+  <div class="hexFF7632 col-sm-1 themed-grid-col">#FF7632</div>
+  <div class="hexFF9864 col-sm-1 themed-grid-col">#FF9864</div>
+  <div class="hexFFB996 col-sm-1 themed-grid-col">#FFB996</div>
+  <div class="hexFFDBC8 col-sm-1 themed-grid-col">#FFDBC8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">3</div>
+  <div class="hex1C1C1C text-white col-sm-1 themed-grid-col">#1C1C1C</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex664400 text-white col-sm-1 themed-grid-col">#664400</div>
+  <div class="hex996600 col-sm-1 themed-grid-col">#996600</div>
+  <div class="hexCC8800 col-sm-1 themed-grid-col">#CC8800</div>
+  <div class="hexFFAA00 col-sm-1 themed-grid-col">#FFAA00</div>
+  <div class="hexFFAA32 col-sm-1 themed-grid-col">#FFAA32</div>
+  <div class="hexFFCB64 col-sm-1 themed-grid-col">#FFCB64</div>
+  <div class="hexFFDB96 col-sm-1 themed-grid-col">#FFDB96</div>
+  <div class="hexFFECC8 col-sm-1 themed-grid-col">#FFECC8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">4</div>
+  <div class="hex2A2A2A text-white col-sm-1 themed-grid-col">#2A2A2A</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex666600 text-white col-sm-1 themed-grid-col">#666600</div>
+  <div class="hex999900 col-sm-1 themed-grid-col">#999900</div>
+  <div class="hexCCCC00 col-sm-1 themed-grid-col">#CCCC00</div>
+  <div class="hexFFFF00 col-sm-1 themed-grid-col">#FFFF00</div>
+  <div class="hexFFFE32 col-sm-1 themed-grid-col">#FFFE32</div>
+  <div class="hexFFFE64 col-sm-1 themed-grid-col">#FFFE64</div>
+  <div class="hexFFFD96 col-sm-1 themed-grid-col">#FFFD96</div>
+  <div class="hexFFFDC8 col-sm-1 themed-grid-col">#FFFDC8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">5</div>
+  <div class="hex393939 text-white col-sm-1 themed-grid-col">#393939</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex446600 text-white col-sm-1 themed-grid-col">#446600</div>
+  <div class="hex669900 col-sm-1 themed-grid-col">#669900</div>
+  <div class="hex88CC00 col-sm-1 themed-grid-col">#88CC00</div>
+  <div class="hexAAFF00 col-sm-1 themed-grid-col">#AAFF00</div>
+  <div class="hexBBFE32 col-sm-1 themed-grid-col">#BBFE32</div>
+  <div class="hexCCFE64 col-sm-1 themed-grid-col">#CCFE64</div>
+  <div class="hexDDFD96 col-sm-1 themed-grid-col">#DDFD96</div>
+  <div class="hexEEFDC8 col-sm-1 themed-grid-col">#EEFDC8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">6</div>
+  <div class="hex474747 text-white col-sm-1 themed-grid-col">#474747</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex116600 text-white col-sm-1 themed-grid-col">#116600</div>
+  <div class="hex199900 col-sm-1 themed-grid-col">#199900</div>
+  <div class="hex22CC00 col-sm-1 themed-grid-col">#22CC00</div>
+  <div class="hex2AFF00 col-sm-1 themed-grid-col">#2AFF00</div>
+  <div class="hex55FE32 col-sm-1 themed-grid-col">#55FE32</div>
+  <div class="hex7FFE64 col-sm-1 themed-grid-col">#7FFE64</div>
+  <div class="hexAAFD96 col-sm-1 themed-grid-col">#AAFD96</div>
+  <div class="hexD4FDC8 col-sm-1 themed-grid-col">#D4FDC8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">7</div>
+  <div class="hex555555 text-white col-sm-1 themed-grid-col">#555555</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex006611 text-white col-sm-1 themed-grid-col">#006611</div>
+  <div class="hex00991A col-sm-1 themed-grid-col">#00991A</div>
+  <div class="hex00CC22 col-sm-1 themed-grid-col">#00CC22</div>
+  <div class="hex00FF2B col-sm-1 themed-grid-col">#00FF2B</div>
+  <div class="hex33FE54 col-sm-1 themed-grid-col">#33FE54</div>
+  <div class="hex66FE7E col-sm-1 themed-grid-col">#66FE7E</div>
+  <div class="hex99FDA7 col-sm-1 themed-grid-col">#99FDA7</div>
+  <div class="hexCCFDD1 col-sm-1 themed-grid-col">#CCFDD1</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">8</div>
+  <div class="hex636363 col-sm-1 themed-grid-col">#636363</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex006633 text-white col-sm-1 themed-grid-col">#006633</div>
+  <div class="hex00994D col-sm-1 themed-grid-col">#00994D</div>
+  <div class="hex00CC66 col-sm-1 themed-grid-col">#00CC66</div>
+  <div class="hex00FF80 col-sm-1 themed-grid-col">#00FF80</div>
+  <div class="hex33FE98 col-sm-1 themed-grid-col">#33FE98</div>
+  <div class="hex66FE98 col-sm-1 themed-grid-col">#66FE98</div>
+  <div class="hex99FDC9 col-sm-1 themed-grid-col">#99FDC9</div>
+  <div class="hexCCFDE2 col-sm-1 themed-grid-col">#CCFDE2</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">9</div>
+  <div class="hex717171 col-sm-1 themed-grid-col">#717171</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex006655 text-white col-sm-1 themed-grid-col">#006655</div>
+  <div class="hex00997F col-sm-1 themed-grid-col">#00997F</div>
+  <div class="hex00CCAA col-sm-1 themed-grid-col">#00CCAA</div>
+  <div class="hex00FFD4 col-sm-1 themed-grid-col">#00FFD4</div>
+  <div class="hex33FEDC col-sm-1 themed-grid-col">#33FEDC</div>
+  <div class="hex66FEE3 col-sm-1 themed-grid-col">#66FEE3</div>
+  <div class="hex99FDEB col-sm-1 themed-grid-col">#99FDEB</div>
+  <div class="hexCCFDF2 col-sm-1 themed-grid-col">#CCFDF2</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">10</div>
+  <div class="hex7F7F7F col-sm-1 themed-grid-col">#7F7F7F</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex005566 text-white col-sm-1 themed-grid-col">#005566</div>
+  <div class="hex007F99 col-sm-1 themed-grid-col">#007F99</div>
+  <div class="hex00AACC col-sm-1 themed-grid-col">#00AACC</div>
+  <div class="hex00D4FF col-sm-1 themed-grid-col">#00D4FF</div>
+  <div class="hex33DCFE col-sm-1 themed-grid-col">#33DCFE</div>
+  <div class="hex66E4FD col-sm-1 themed-grid-col">#66E4FD</div>
+  <div class="hex99ECFC col-sm-1 themed-grid-col">#99ECFC</div>
+  <div class="hexCCF4FB col-sm-1 themed-grid-col">#CCF4FB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">11</div>
+  <div class="hex8E8E8E col-sm-1 themed-grid-col">#8E8E8E</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex004466 text-white col-sm-1 themed-grid-col">#004466</div>
+  <div class="hex006699 col-sm-1 themed-grid-col">#006699</div>
+  <div class="hex0088CC col-sm-1 themed-grid-col">#0088CC</div>
+  <div class="hex00AAFF col-sm-1 themed-grid-col">#00AAFF</div>
+  <div class="hex33BAFE col-sm-1 themed-grid-col">#33BAFE</div>
+  <div class="hex66CBFD col-sm-1 themed-grid-col">#66CBFD</div>
+  <div class="hex99DBFC col-sm-1 themed-grid-col">#99DBFC</div>
+  <div class="hexCCECFB col-sm-1 themed-grid-col">#CCECFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">12</div>
+  <div class="hex9C9C9C col-sm-1 themed-grid-col">#9C9C9C</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex002266 text-white col-sm-1 themed-grid-col">#002266</div>
+  <div class="hex003399 col-sm-1 themed-grid-col">#003399</div>
+  <div class="hex0044CC col-sm-1 themed-grid-col">#0044CC</div>
+  <div class="hex0055FF col-sm-1 themed-grid-col">#0055FF</div>
+  <div class="hex3376FE col-sm-1 themed-grid-col">#3376FE</div>
+  <div class="hex6698FD col-sm-1 themed-grid-col">#6698FD</div>
+  <div class="hex99B9FC col-sm-1 themed-grid-col">#99B9FC</div>
+  <div class="hexCCDBFB col-sm-1 themed-grid-col">#CCDBFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">13</div>
+  <div class="hexAAAAAA col-sm-1 themed-grid-col">#AAAAAA</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">#</div>
+  <div class="hex000066 text-white col-sm-1 themed-grid-col">#000066</div>
+  <div class="hex000099 col-sm-1 themed-grid-col">#000099</div>
+  <div class="hex0000CC col-sm-1 themed-grid-col">#0000CC</div>
+  <div class="hex0000FF col-sm-1 themed-grid-col">#0000FF</div>
+  <div class="hex3332FE col-sm-1 themed-grid-col">#3332FE</div>
+  <div class="hex6665FD col-sm-1 themed-grid-col">#6665FD</div>
+  <div class="hex9997FC col-sm-1 themed-grid-col">#9997FC</div>
+  <div class="hexCCCAFB col-sm-1 themed-grid-col">#CCCAFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">14</div>
+  <div class="hexB8B8B8 col-sm-1 themed-grid-col">#B8B8B8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex220066 text-white col-sm-1 themed-grid-col">#220066</div>
+  <div class="hex330099 col-sm-1 themed-grid-col">#330099</div>
+  <div class="hex4400CC col-sm-1 themed-grid-col">#4400CC</div>
+  <div class="hex5500FF col-sm-1 themed-grid-col">#5500FF</div>
+  <div class="hex7732FE col-sm-1 themed-grid-col">#7732FE</div>
+  <div class="hex9965FD col-sm-1 themed-grid-col">#9965FD</div>
+  <div class="hexBB97FC col-sm-1 themed-grid-col">#BB97FC</div>
+  <div class="hexDDCAFB col-sm-1 themed-grid-col">#DDCAFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">15</div>
+  <div class="hexC6C6C6 col-sm-1 themed-grid-col">#C6C6C6</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex440066 text-white col-sm-1 themed-grid-col">#440066</div>
+  <div class="hex660099 col-sm-1 themed-grid-col">#660099</div>
+  <div class="hex8800CC col-sm-1 themed-grid-col">#8800CC</div>
+  <div class="hexAA00FF col-sm-1 themed-grid-col">#AA00FF</div>
+  <div class="hexBB32FE col-sm-1 themed-grid-col">#BB32FE</div>
+  <div class="hexCC56FD col-sm-1 themed-grid-col">#CC56FD</div>
+  <div class="hexDD97FC col-sm-1 themed-grid-col">#DD97FC</div>
+  <div class="hexEECAFB col-sm-1 themed-grid-col">#EECAFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">16</div>
+  <div class="hexD4D4D4 col-sm-1 themed-grid-col">#D4D4D4</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex660066 text-white col-sm-1 themed-grid-col">#660066</div>
+  <div class="hex990099 col-sm-1 themed-grid-col">#990099</div>
+  <div class="hexCC00CC col-sm-1 themed-grid-col">#CC00CC</div>
+  <div class="hexFF00FF col-sm-1 themed-grid-col">#FF00FF</div>
+  <div class="hexFF32FE col-sm-1 themed-grid-col">#FF32FE</div>
+  <div class="hexFF65FD col-sm-1 themed-grid-col">#FF65FD</div>
+  <div class="hexFF97FC col-sm-1 themed-grid-col">#FF97FC</div>
+  <div class="hexFFCAFB col-sm-1 themed-grid-col">#FFCAFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">17</div>
+  <div class="hexE3E3E3 col-sm-1 themed-grid-col">#E3E3E3</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex660044 text-white col-sm-1 themed-grid-col">#660044</div>
+  <div class="hex990066 col-sm-1 themed-grid-col">#990066</div>
+  <div class="hexCC0088 col-sm-1 themed-grid-col">#CC0088</div>
+  <div class="hexFF00AA col-sm-1 themed-grid-col">#FF00AA</div>
+  <div class="hexFF32BA col-sm-1 themed-grid-col">#FF32BA</div>
+  <div class="hexFF65CA col-sm-1 themed-grid-col">#FF65CA</div>
+  <div class="hexFF97DA col-sm-1 themed-grid-col">#FF97DA</div>
+  <div class="hexFFCAEA col-sm-1 themed-grid-col">#FFCAEA</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">18</div>
+  <div class="hexF1F1F1 col-sm-1 themed-grid-col">#F1F1F1</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex660022 text-white col-sm-1 themed-grid-col">#660022</div>
+  <div class="hex990033 col-sm-1 themed-grid-col">#990033</div>
+  <div class="hexCC0044 col-sm-1 themed-grid-col">#CC0044</div>
+  <div class="hexFF0055 col-sm-1 themed-grid-col">#FF0055</div>
+  <div class="hexFF3276 col-sm-1 themed-grid-col">#FF3276</div>
+  <div class="hexFF6597 col-sm-1 themed-grid-col">#FF6597</div>
+  <div class="hexFF97B8 col-sm-1 themed-grid-col">#FF97B8</div>
+  <div class="hexFFCAD9 col-sm-1 themed-grid-col">#FFCAD9</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">19</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">#YYYYYY</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex660011 text-white col-sm-1 themed-grid-col">#660011</div>
+  <div class="hex990019 col-sm-1 themed-grid-col">#990019</div>
+  <div class="hexCC0022 col-sm-1 themed-grid-col">#CC0022</div>
+  <div class="hexFF002A col-sm-1 themed-grid-col">#FF002A</div>
+  <div class="hexFF3254 col-sm-1 themed-grid-col">#FF3254</div>
+  <div class="hexFF657D col-sm-1 themed-grid-col">#FF657D</div>
+  <div class="hexFF97A7 col-sm-1 themed-grid-col">#FF97A7</div>
+  <div class="hexFFCAD0 col-sm-1 themed-grid-col">#FFCAD0</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+
+
+
+
+
+<div class="row mb-3 text-center">
+  <div>Bottom breaker</div>
+</div>
+
+</div>
+
+</main>
+
+<br/><br/>
+
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">LATIN</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Lorem ipsum dolor</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <center>
+                    <div class="col-8">
+                        <br/><br/>
+<p align="justify">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin erat ex, eu egestas ipsum malesuada eget. Morbi lobortis felis in nisl cursus, eget dapibus magna elementum. Duis quis erat massa. Proin sed mollis libero, eget venenatis justo. Suspendisse tincidunt est pretium, congue erat sit amet, fringilla nisl. In vitae nunc tristique, aliquam tortor sed, feugiat velit. Donec ut urna mi. Nam ultrices pharetra gravida. Maecenas nulla velit, eleifend eget iaculis vel, iaculis vel orci. Nam sed ex vitae nisi fermentum gravida. Ut aliquet turpis sem, ac consequat lorem iaculis non. Vestibulum nisl quam, efficitur vel ullamcorper id, consequat ac massa. Quisque iaculis sapien arcu, quis lobortis eros aliquet pharetra.
+<br/><br/>
+Sed non condimentum dolor. Vivamus euismod ullamcorper urna, eget malesuada nibh bibendum a. Cras tincidunt, mauris ut faucibus finibus, eros diam dapibus arcu, ut eleifend dui elit ut ligula. Donec in orci eu urna molestie tristique. Etiam efficitur ut orci ut imperdiet. Vestibulum venenatis nunc id congue convallis. Quisque sodales nulla augue, eget feugiat turpis iaculis vitae. Nunc non tellus tincidunt, hendrerit nunc sit amet, convallis tortor. Quisque et tempor diam. Vivamus aliquet id lorem in sodales. Nulla a consectetur ex, eget maximus neque. Suspendisse varius, lectus vel auctor vestibulum, diam lacus consectetur risus, vel gravida arcu enim eget lectus. Duis sodales pretium interdum.
+<br/><br/>
+Etiam gravida non orci eget vestibulum. Donec et tristique massa, at laoreet nisl. Sed lobortis est massa, a blandit nibh tincidunt eu. Nam at tortor egestas, suscipit justo blandit, ultrices nisl. Phasellus imperdiet placerat eros, sed fermentum mi scelerisque id. Duis dignissim leo eu orci sodales mattis. Suspendisse nisl velit, tristique eget ante nec, egestas scelerisque metus. In pellentesque odio purus, vitae scelerisque massa sodales sit amet. Ut ex augue, elementum sed luctus a, facilisis et dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam mauris sapien, malesuada id hendrerit sed, accumsan nec nunc. Fusce consectetur, metus ac suscipit varius, nulla ante scelerisque tellus, ut pretium dui velit at lectus. Suspendisse sem nunc, viverra tempus venenatis sit amet, mattis a nibh. Nulla pretium dictum ipsum, eget placerat urna semper id.
+</p>
+<br/><br/>
+                    </div>
+                </center>
+            </div>
+        </div>
+
+
+
+<script src="{% static 'js/pickr.es5.min.js' %}"></script>
+<script src="{% static 'js/index.js' %}"></script>
+
+
+{% endblock %}

@@ -1,0 +1,981 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title_tag }}{% endblock %}
+{% block content %}
+
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/color-grid.css' %}" rel="stylesheet">
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(7, 64px);
+            grid-template-rows: repeat(1, 64px);
+        }
+        .block-a {
+            background-color: {{ hex_color1 }};
+            border: 10px solid {{ border_color1 }};
+        }
+        .block-b {
+            background-color: {{ hex_color2 }};
+            border: 10px solid {{ border_color2 }};
+        }
+        .block-c {
+            background-color: {{ hex_color3 }};
+            border: 10px solid {{ border_color3 }};
+        }
+        .block-d {
+            background-color: {{ hex_color1 }};
+
+        }
+        .block-e {
+            background-color: {{ hex_color2 }};
+
+        }
+        .block-f {
+            background-color: {{ hex_color3 }};
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<a id="top"></a>
+  
+    <h1>Enter a Hexadecimal Color Code</h1>
+
+    <div class="grid">
+        <div class="block-a"></div>
+        <a  class="btn btn-lg btn-dark fw-thin border-#CCCCCC bg-#CCCCCC">+</a>
+        <div class="block-b"></div>
+        <a  class="btn btn-lg btn-dark fw-thin border-#CCCCCC bg-#CCCCCC">=</a>
+        <div class="block-c"></div>
+        <a  class="btn btn-lg btn-dark fw-thin border-#CCCCCC bg-#CCCCCC"></a>
+    </div>
+    <br/>
+    <div class="grid">
+        <div class="block-d"></div>
+        <a href="" class="btn btn-lg btn-dark fw-thin border-#CCCCCC bg-#CCCCCC">+</a>
+        <div class="block-e"></div>
+        <a href="" class="btn btn-lg btn-dark fw-thin border-#CCCCCC bg-#CCCCCC">=</a>
+        <div class="block-f"></div>
+
+        <a  class="btn btn-lg btn-dark fw-thin border-#CCCCCC bg-#CCCCCC"></a>
+        <a href="{% url 'color_input' %}" class="btn btn-lg btn-dark fw-thin border-white bg-#CCCCCC">Set</a>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <br/>
+        <label for="hex_color1">Hexdix Color One Code: {{ hex_color1 }}</label>
+        <br/>
+        <label for="border_color1">Border Color One Code: {{ border_color1 }}</label>
+        <br/>
+        <label for="hex_color1">Hexdix Color Two Code: {{ hex_color2 }}</label>
+        <br/>
+        <label for="border_color2">Border Color Two Code: {{ border_color2 }}</label>
+        <br/>
+        <label for="hex_color3">Hexdix Color Tree Code: {{ hex_color3 }}</label>
+        <br/>
+        <label for="border_color3">Border Color Tree Code: {{ border_color3 }}</label>
+        <br/>
+
+    </form>
+<br/>
+<main>
+  <div class="blockX themed-container text-black">
+
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">1</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">#000000</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">#</div>
+  <div class="hex660000 text-white col-sm-1 themed-grid-col">#660000</div>
+  <div class="hex990000 col-sm-1 themed-grid-col">#990000</div>
+  <div class="hexCC0000 col-sm-1 themed-grid-col">#CC0000</div>
+  <div class="hexFF0000 col-sm-1 themed-grid-col">#FF0000</div>
+  <div class="hexFF3333 col-sm-1 themed-grid-col">#FF3333</div>
+  <div class="hexFF6666 col-sm-1 themed-grid-col">#FF6666</div>
+  <div class="hexFF9999 col-sm-1 themed-grid-col">#FF9999</div>
+  <div class="hexFFCCCC col-sm-1 themed-grid-col">#FFCCCC</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"> </div>
+</div>
+
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">2</div>
+  <div class="hex0E0E0E text-white col-sm-1 themed-grid-col">#0E0E0E</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex662200 text-white col-sm-1 themed-grid-col">#662200</div>
+  <div class="hex993300 col-sm-1 themed-grid-col">#993300</div>
+  <div class="hexCC4400 col-sm-1 themed-grid-col">#CC4400</div>
+  <div class="hexFF5500 col-sm-1 themed-grid-col">#FF5500</div>
+  <div class="hexFF7632 col-sm-1 themed-grid-col">#FF7632</div>
+  <div class="hexFF9864 col-sm-1 themed-grid-col">#FF9864</div>
+  <div class="hexFFB996 col-sm-1 themed-grid-col">#FFB996</div>
+  <div class="hexFFDBC8 col-sm-1 themed-grid-col">#FFDBC8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">3</div>
+  <div class="hex1C1C1C text-white col-sm-1 themed-grid-col">#1C1C1C</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex664400 text-white col-sm-1 themed-grid-col">#664400</div>
+  <div class="hex996600 col-sm-1 themed-grid-col">#996600</div>
+  <div class="hexCC8800 col-sm-1 themed-grid-col">#CC8800</div>
+  <div class="hexFFAA00 col-sm-1 themed-grid-col">#FFAA00</div>
+  <div class="hexFFAA32 col-sm-1 themed-grid-col">#FFAA32</div>
+  <div class="hexFFCB64 col-sm-1 themed-grid-col">#FFCB64</div>
+  <div class="hexFFDB96 col-sm-1 themed-grid-col">#FFDB96</div>
+  <div class="hexFFECC8 col-sm-1 themed-grid-col">#FFECC8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">4</div>
+  <div class="hex2A2A2A text-white col-sm-1 themed-grid-col">#2A2A2A</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex666600 text-white col-sm-1 themed-grid-col">#666600</div>
+  <div class="hex999900 col-sm-1 themed-grid-col">#999900</div>
+  <div class="hexCCCC00 col-sm-1 themed-grid-col">#CCCC00</div>
+  <div class="hexFFFF00 col-sm-1 themed-grid-col">#FFFF00</div>
+  <div class="hexFFFE32 col-sm-1 themed-grid-col">#FFFE32</div>
+  <div class="hexFFFE64 col-sm-1 themed-grid-col">#FFFE64</div>
+  <div class="hexFFFD96 col-sm-1 themed-grid-col">#FFFD96</div>
+  <div class="hexFFFDC8 col-sm-1 themed-grid-col">#FFFDC8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">5</div>
+  <div class="hex393939 text-white col-sm-1 themed-grid-col">#393939</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex446600 text-white col-sm-1 themed-grid-col">#446600</div>
+  <div class="hex669900 col-sm-1 themed-grid-col">#669900</div>
+  <div class="hex88CC00 col-sm-1 themed-grid-col">#88CC00</div>
+  <div class="hexAAFF00 col-sm-1 themed-grid-col">#AAFF00</div>
+  <div class="hexBBFE32 col-sm-1 themed-grid-col">#BBFE32</div>
+  <div class="hexCCFE64 col-sm-1 themed-grid-col">#CCFE64</div>
+  <div class="hexDDFD96 col-sm-1 themed-grid-col">#DDFD96</div>
+  <div class="hexEEFDC8 col-sm-1 themed-grid-col">#EEFDC8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">6</div>
+  <div class="hex474747 text-white col-sm-1 themed-grid-col">#474747</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex116600 text-white col-sm-1 themed-grid-col">#116600</div>
+  <div class="hex199900 col-sm-1 themed-grid-col">#199900</div>
+  <div class="hex22CC00 col-sm-1 themed-grid-col">#22CC00</div>
+  <div class="hex2AFF00 col-sm-1 themed-grid-col">#2AFF00</div>
+  <div class="hex55FE32 col-sm-1 themed-grid-col">#55FE32</div>
+  <div class="hex7FFE64 col-sm-1 themed-grid-col">#7FFE64</div>
+  <div class="hexAAFD96 col-sm-1 themed-grid-col">#AAFD96</div>
+  <div class="hexD4FDC8 col-sm-1 themed-grid-col">#D4FDC8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">7</div>
+  <div class="hex555555 text-white col-sm-1 themed-grid-col">#555555</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex006611 text-white col-sm-1 themed-grid-col">#006611</div>
+  <div class="hex00991A col-sm-1 themed-grid-col">#00991A</div>
+  <div class="hex00CC22 col-sm-1 themed-grid-col">#00CC22</div>
+  <div class="hex00FF2B col-sm-1 themed-grid-col">#00FF2B</div>
+  <div class="hex33FE54 col-sm-1 themed-grid-col">#33FE54</div>
+  <div class="hex66FE7E col-sm-1 themed-grid-col">#66FE7E</div>
+  <div class="hex99FDA7 col-sm-1 themed-grid-col">#99FDA7</div>
+  <div class="hexCCFDD1 col-sm-1 themed-grid-col">#CCFDD1</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">8</div>
+  <div class="hex636363 col-sm-1 themed-grid-col">#636363</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex006633 text-white col-sm-1 themed-grid-col">#006633</div>
+  <div class="hex00994D col-sm-1 themed-grid-col">#00994D</div>
+  <div class="hex00CC66 col-sm-1 themed-grid-col">#00CC66</div>
+  <div class="hex00FF80 col-sm-1 themed-grid-col">#00FF80</div>
+  <div class="hex33FE98 col-sm-1 themed-grid-col">#33FE98</div>
+  <div class="hex66FE98 col-sm-1 themed-grid-col">#66FE98</div>
+  <div class="hex99FDC9 col-sm-1 themed-grid-col">#99FDC9</div>
+  <div class="hexCCFDE2 col-sm-1 themed-grid-col">#CCFDE2</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">9</div>
+  <div class="hex717171 col-sm-1 themed-grid-col">#717171</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex006655 text-white col-sm-1 themed-grid-col">#006655</div>
+  <div class="hex00997F col-sm-1 themed-grid-col">#00997F</div>
+  <div class="hex00CCAA col-sm-1 themed-grid-col">#00CCAA</div>
+  <div class="hex00FFD4 col-sm-1 themed-grid-col">#00FFD4</div>
+  <div class="hex33FEDC col-sm-1 themed-grid-col">#33FEDC</div>
+  <div class="hex66FEE3 col-sm-1 themed-grid-col">#66FEE3</div>
+  <div class="hex99FDEB col-sm-1 themed-grid-col">#99FDEB</div>
+  <div class="hexCCFDF2 col-sm-1 themed-grid-col">#CCFDF2</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">10</div>
+  <div class="hex7F7F7F col-sm-1 themed-grid-col">#7F7F7F</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex005566 text-white col-sm-1 themed-grid-col">#005566</div>
+  <div class="hex007F99 col-sm-1 themed-grid-col">#007F99</div>
+  <div class="hex00AACC col-sm-1 themed-grid-col">#00AACC</div>
+  <div class="hex00D4FF col-sm-1 themed-grid-col">#00D4FF</div>
+  <div class="hex33DCFE col-sm-1 themed-grid-col">#33DCFE</div>
+  <div class="hex66E4FD col-sm-1 themed-grid-col">#66E4FD</div>
+  <div class="hex99ECFC col-sm-1 themed-grid-col">#99ECFC</div>
+  <div class="hexCCF4FB col-sm-1 themed-grid-col">#CCF4FB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">11</div>
+  <div class="hex8E8E8E col-sm-1 themed-grid-col">#8E8E8E</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex004466 text-white col-sm-1 themed-grid-col">#004466</div>
+  <div class="hex006699 col-sm-1 themed-grid-col">#006699</div>
+  <div class="hex0088CC col-sm-1 themed-grid-col">#0088CC</div>
+  <div class="hex00AAFF col-sm-1 themed-grid-col">#00AAFF</div>
+  <div class="hex33BAFE col-sm-1 themed-grid-col">#33BAFE</div>
+  <div class="hex66CBFD col-sm-1 themed-grid-col">#66CBFD</div>
+  <div class="hex99DBFC col-sm-1 themed-grid-col">#99DBFC</div>
+  <div class="hexCCECFB col-sm-1 themed-grid-col">#CCECFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">12</div>
+  <div class="hex9C9C9C col-sm-1 themed-grid-col">#9C9C9C</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex002266 text-white col-sm-1 themed-grid-col">#002266</div>
+  <div class="hex003399 col-sm-1 themed-grid-col">#003399</div>
+  <div class="hex0044CC col-sm-1 themed-grid-col">#0044CC</div>
+  <div class="hex0055FF col-sm-1 themed-grid-col">#0055FF</div>
+  <div class="hex3376FE col-sm-1 themed-grid-col">#3376FE</div>
+  <div class="hex6698FD col-sm-1 themed-grid-col">#6698FD</div>
+  <div class="hex99B9FC col-sm-1 themed-grid-col">#99B9FC</div>
+  <div class="hexCCDBFB col-sm-1 themed-grid-col">#CCDBFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">13</div>
+  <div class="hexAAAAAA col-sm-1 themed-grid-col">#AAAAAA</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">#</div>
+  <div class="hex000066 text-white col-sm-1 themed-grid-col">#000066</div>
+  <div class="hex000099 col-sm-1 themed-grid-col">#000099</div>
+  <div class="hex0000CC col-sm-1 themed-grid-col">#0000CC</div>
+  <div class="hex0000FF col-sm-1 themed-grid-col">#0000FF</div>
+  <div class="hex3332FE col-sm-1 themed-grid-col">#3332FE</div>
+  <div class="hex6665FD col-sm-1 themed-grid-col">#6665FD</div>
+  <div class="hex9997FC col-sm-1 themed-grid-col">#9997FC</div>
+  <div class="hexCCCAFB col-sm-1 themed-grid-col">#CCCAFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">14</div>
+  <div class="hexB8B8B8 col-sm-1 themed-grid-col">#B8B8B8</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex220066 text-white col-sm-1 themed-grid-col">#220066</div>
+  <div class="hex330099 col-sm-1 themed-grid-col">#330099</div>
+  <div class="hex4400CC col-sm-1 themed-grid-col">#4400CC</div>
+  <div class="hex5500FF col-sm-1 themed-grid-col">#5500FF</div>
+  <div class="hex7732FE col-sm-1 themed-grid-col">#7732FE</div>
+  <div class="hex9965FD col-sm-1 themed-grid-col">#9965FD</div>
+  <div class="hexBB97FC col-sm-1 themed-grid-col">#BB97FC</div>
+  <div class="hexDDCAFB col-sm-1 themed-grid-col">#DDCAFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">15</div>
+  <div class="hexC6C6C6 col-sm-1 themed-grid-col">#C6C6C6</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex440066 text-white col-sm-1 themed-grid-col">#440066</div>
+  <div class="hex660099 col-sm-1 themed-grid-col">#660099</div>
+  <div class="hex8800CC col-sm-1 themed-grid-col">#8800CC</div>
+  <div class="hexAA00FF col-sm-1 themed-grid-col">#AA00FF</div>
+  <div class="hexBB32FE col-sm-1 themed-grid-col">#BB32FE</div>
+  <div class="hexCC56FD col-sm-1 themed-grid-col">#CC56FD</div>
+  <div class="hexDD97FC col-sm-1 themed-grid-col">#DD97FC</div>
+  <div class="hexEECAFB col-sm-1 themed-grid-col">#EECAFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">16</div>
+  <div class="hexD4D4D4 col-sm-1 themed-grid-col">#D4D4D4</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex660066 text-white col-sm-1 themed-grid-col">#660066</div>
+  <div class="hex990099 col-sm-1 themed-grid-col">#990099</div>
+  <div class="hexCC00CC col-sm-1 themed-grid-col">#CC00CC</div>
+  <div class="hexFF00FF col-sm-1 themed-grid-col">#FF00FF</div>
+  <div class="hexFF32FE col-sm-1 themed-grid-col">#FF32FE</div>
+  <div class="hexFF65FD col-sm-1 themed-grid-col">#FF65FD</div>
+  <div class="hexFF97FC col-sm-1 themed-grid-col">#FF97FC</div>
+  <div class="hexFFCAFB col-sm-1 themed-grid-col">#FFCAFB</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">17</div>
+  <div class="hexE3E3E3 col-sm-1 themed-grid-col">#E3E3E3</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex660044 text-white col-sm-1 themed-grid-col">#660044</div>
+  <div class="hex990066 col-sm-1 themed-grid-col">#990066</div>
+  <div class="hexCC0088 col-sm-1 themed-grid-col">#CC0088</div>
+  <div class="hexFF00AA col-sm-1 themed-grid-col">#FF00AA</div>
+  <div class="hexFF32BA col-sm-1 themed-grid-col">#FF32BA</div>
+  <div class="hexFF65CA col-sm-1 themed-grid-col">#FF65CA</div>
+  <div class="hexFF97DA col-sm-1 themed-grid-col">#FF97DA</div>
+  <div class="hexFFCAEA col-sm-1 themed-grid-col">#FFCAEA</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">18</div>
+  <div class="hexF1F1F1 col-sm-1 themed-grid-col">#F1F1F1</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex660022 text-white col-sm-1 themed-grid-col">#660022</div>
+  <div class="hex990033 col-sm-1 themed-grid-col">#990033</div>
+  <div class="hexCC0044 col-sm-1 themed-grid-col">#CC0044</div>
+  <div class="hexFF0055 col-sm-1 themed-grid-col">#FF0055</div>
+  <div class="hexFF3276 col-sm-1 themed-grid-col">#FF3276</div>
+  <div class="hexFF6597 col-sm-1 themed-grid-col">#FF6597</div>
+  <div class="hexFF97B8 col-sm-1 themed-grid-col">#FF97B8</div>
+  <div class="hexFFCAD9 col-sm-1 themed-grid-col">#FFCAD9</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+<div class="row">
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">19</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">#YYYYYY</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+  <div class="hex660011 text-white col-sm-1 themed-grid-col">#660011</div>
+  <div class="hex990019 col-sm-1 themed-grid-col">#990019</div>
+  <div class="hexCC0022 col-sm-1 themed-grid-col">#CC0022</div>
+  <div class="hexFF002A col-sm-1 themed-grid-col">#FF002A</div>
+  <div class="hexFF3254 col-sm-1 themed-grid-col">#FF3254</div>
+  <div class="hexFF657D col-sm-1 themed-grid-col">#FF657D</div>
+  <div class="hexFF97A7 col-sm-1 themed-grid-col">#FF97A7</div>
+  <div class="hexFFCAD0 col-sm-1 themed-grid-col">#FFCAD0</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col"></div>
+</div>
+
+
+<div class="row mb-3 text-center">
+  <div class=" col-4 ">.col-4</div>
+  <div class="col-4 themed-grid-col">.col-4</div>
+  <div class="block0 col-4 themed-grid-col">BLOCK0</div>
+</div>
+
+
+<div class="row mb-3 text-center">
+  <div>Bottom breaker</div>
+</div>
+
+</div>
+
+
+
+
+        <h1>COLOR SLIDE - 140 Color Names</h1>
+
+
+  <h1 style="background-color:DodgerBlue;">CSS Color Grid</h1>
+
+<p style="background-color:Tomato;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
+
+<h1 style="color:Tomato;">Tomato</h1>
+<p style="color:DodgerBlue;">DodgerBlue</p>
+<p style="color:MediumSeaGreen;">MediumSeaGreen</p>
+
+<h1 style="color:#FF0000;">#FF0000</h1>
+<p style="color:#0000FF;">#0000FF</p>
+<p style="color:#00FF00;">#00FF00</p>
+
+
+  <div class="blockX themed-container text-black">
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">Hexa</div>
+  <div class="hexF0F8FF col-sm-1 themed-grid-col">AliceBlue</div>
+  <div class="hexFAEBD7 col-sm-1 themed-grid-col">AntiqueWhite</div>
+  <div class="hex00FFFF col-sm-1 themed-grid-col">Aqua</div>
+  <div class="hex7FFFD4 col-sm-1 themed-grid-col">Aquamarine</div>
+  <div class="hexF0FFFF col-sm-1 themed-grid-col">Azure</div>
+  <div class="hexF5F5DC col-sm-1 themed-grid-col">Beige</div>
+  <div class="hexFFE4C4 col-sm-1 themed-grid-col">Bisque</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">Black</div>
+  <div class="hexFFEBCD col-sm-1 themed-grid-col">BlanchedAlmond</div>
+  <div class="hex0000FF col-sm-1 themed-grid-col">Blue</div>
+  <div class="hex8A2BE2 col-sm-1 themed-grid-col">BlueViolet</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">Names</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="background-color:AliceBlue;">AliceBlue</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="background-color:AntiqueWhite;">AntiqueWhite</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="background-color:Aqua;">Aqua</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="background-color:Aquamarine;">Aquamarine</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="background-color:Azure;">Azure</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="background-color:Beige;">Beige</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="background-color:Bisque;">Bisque</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col" style="background-color:Black;">Black</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="background-color:BlanchedAlmond;">BlanchedAlmond</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="background-color:Blue;">Blue</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="background-color:BlueViolet;">BlueViolet</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">Both</div>
+  <div class="hexA52A2A col-sm-1 themed-grid-col" style="background-color:Brown;">Brown</div>
+  <div class="hexDEB887 col-sm-1 themed-grid-col" style="background-color:BurlyWood;">BurlyWood</div>
+  <div class="hex5F9EA0 col-sm-1 themed-grid-col" style="background-color:CadetBlue;">CadetBlue</div>
+  <div class="hex7FFF00 col-sm-1 themed-grid-col" style="background-color:Chartreuse;">Chartreuse</div>
+  <div class="hexD2691E col-sm-1 themed-grid-col" style="background-color:Chocolate;">Chocolate</div>
+  <div class="hexFF7F50 col-sm-1 themed-grid-col" style="background-color:Coral;">Coral</div>
+  <div class="hex6495ED col-sm-1 themed-grid-col" style="background-color:CornflowerBlue;">CornflowerBlue</div>
+  <div class="hexFFF8DC col-sm-1 themed-grid-col" style="background-color:Cornsilk;">Cornsilk</div>
+  <div class="hexDC143C col-sm-1 themed-grid-col" style="background-color:Crimson;">Crimson</div>
+  <div class="hex00FFFF col-sm-1 themed-grid-col" style="background-color:Cyan;">Cyan</div>
+  <div class="hex00008B col-sm-1 themed-grid-col" style="background-color:DarkBlue;">DarkBlue</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">3</div>
+  <div class="hex008B8B col-sm-1 themed-grid-col" style="background-color:DarkCyan;">DarkCyan</div>
+  <div class="hexB8860B col-sm-1 themed-grid-col" style="background-color:DarkGoldenRod;">DarkGoldenRod</div>
+  <div class="hexA9A9A9 col-sm-1 themed-grid-col" style="background-color:DarkGray;">DarkGray</div>
+  <div class="hex006400 col-sm-1 themed-grid-col" style="background-color:DarkGreen;">DarkGreen</div>
+  <div class="hexBDB76B col-sm-1 themed-grid-col" style="background-color:DarkKhaki;">DarkKhaki</div>
+  <div class="hex8B008B col-sm-1 themed-grid-col" style="background-color:DarkMagenta;">DarkMagenta</div>
+  <div class="hex556B2F col-sm-1 themed-grid-col" style="background-color:DarkOliveGreen;">DarkOliveGreen</div>
+  <div class="hexFF8C00 col-sm-1 themed-grid-col" style="background-color:Darkorange;">Darkorange</div>
+  <div class="hex9932CC col-sm-1 themed-grid-col" style="background-color:DarkOrchid;">DarkOrchid</div>
+  <div class="hex8B0000 col-sm-1 themed-grid-col" style="background-color:DarkRed;">DarkRed</div>
+  <div class="hexE9967A col-sm-1 themed-grid-col" style="background-color:DarkSalmon;">DarkSalmon</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">4</div>
+  <div class="hex8FBC8F col-sm-1 themed-grid-col" style="background-color:DarkSeaGreen;">DarkSeaGreen</div>
+  <div class="hex483D8B col-sm-1 themed-grid-col" style="background-color:DarkSlateBlue;">DarkSlateBlue</div>
+  <div class="hex2F4F4F col-sm-1 themed-grid-col" style="background-color:DarkSlateGray;">DarkSlateGray</div>
+  <div class="hex00CED1 col-sm-1 themed-grid-col" style="background-color:DarkTurquoise;">DarkTurquoise</div>
+  <div class="hex9400D3 col-sm-1 themed-grid-col" style="background-color:DarkViolet;">DarkViolet</div>
+  <div class="hexFF1493 col-sm-1 themed-grid-col" style="background-color:DeepPink;">DeepPink</div>
+  <div class="hex00BFFF col-sm-1 themed-grid-col" style="background-color:DeepSkyBlue;">DeepSkyBlue</div>
+  <div class="hex696969 col-sm-1 themed-grid-col" style="background-color:DimGray;">DimGray</div>
+  <div class="hex1E90FF col-sm-1 themed-grid-col" style="background-color:DodgerBlue;">DodgerBlue</div>
+  <div class="hexB22222 col-sm-1 themed-grid-col" style="background-color:FireBrick;">FireBrick</div>
+  <div class="hexFFFAF0 col-sm-1 themed-grid-col" style="background-color:FloralWhite;">FloralWhite</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">5</div>
+  <div class="hex228B22 col-sm-1 themed-grid-col" style="background-color:ForestGreen;">ForestGreen</div>
+  <div class="hexFF00FF col-sm-1 themed-grid-col" style="background-color:Fuchsia;">Fuchsia</div>
+  <div class="hexDCDCDC col-sm-1 themed-grid-col" style="background-color:Gainsboro;">Gainsboro</div>
+  <div class="hexF8F8FF col-sm-1 themed-grid-col" style="background-color:GhostWhite;">GhostWhite</div>
+  <div class="hexFFD700 col-sm-1 themed-grid-col" style="background-color:Gold;">Gold</div>
+  <div class="hexDAA520 col-sm-1 themed-grid-col" style="background-color:GoldenRod;">GoldenRod</div>
+  <div class="hex808080 col-sm-1 themed-grid-col" style="background-color:Gray;">Gray</div>
+  <div class="hex008000 col-sm-1 themed-grid-col" style="background-color:Green;">Green</div>
+  <div class="hexADFF2F col-sm-1 themed-grid-col" style="background-color:GreenYellow;">GreenYellow</div>
+  <div class="hexF0FFF0 col-sm-1 themed-grid-col" style="background-color:HoneyDew;">HoneyDew</div>
+  <div class="hexFF69B4 col-sm-1 themed-grid-col" style="background-color:HotPink;">HotPink</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">6</div>
+  <div class="hexCD5C5C col-sm-1 themed-grid-col" style="background-color:IndianRed;">IndianRed</div>
+  <div class="hex4B0082 col-sm-1 themed-grid-col" style="background-color:Indigo;">Indigo</div>
+  <div class="hexFFFFF0 col-sm-1 themed-grid-col" style="background-color:Ivory;">Ivory</div>
+  <div class="hexF0E68C col-sm-1 themed-grid-col" style="background-color:Khaki;">Khaki</div>
+  <div class="hexE6E6FA col-sm-1 themed-grid-col" style="background-color:Lavender;">Lavender</div>
+  <div class="hexFFF0F5 col-sm-1 themed-grid-col" style="background-color:LavenderBlush;">LavenderBlush</div>
+  <div class="hex7CFC00 col-sm-1 themed-grid-col" style="background-color:LawnGreen;">LawnGreen</div>
+  <div class="hexFFFACD col-sm-1 themed-grid-col" style="background-color:LemonChiffon;">LemonChiffon</div>
+  <div class="hexADD8E6 col-sm-1 themed-grid-col" style="background-color:LightBlue;">LightBlue</div>
+  <div class="hexF08080 col-sm-1 themed-grid-col" style="background-color:LightCoral;">LightCoral</div>
+  <div class="hexE0FFFF col-sm-1 themed-grid-col" style="background-color:LightCyan;">LightCyan</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">7</div>
+  <div class="hexFAFAD2 col-sm-1 themed-grid-col" style="background-color:LightGoldenRodYellow;">LightGoldenRodYellow</div>
+  <div class="hexD3D3D3 col-sm-1 themed-grid-col" style="background-color:LightGrey;">LightGrey</div>
+  <div class="hex90EE90 col-sm-1 themed-grid-col" style="background-color:LightGreen;">LightGreen</div>
+  <div class="hexFFB6C1 col-sm-1 themed-grid-col" style="background-color:LightPink;">LightPink</div>
+  <div class="hexFFA07A col-sm-1 themed-grid-col" style="background-color:LightSalmon;">LightSalmon</div>
+  <div class="hex20B2AA col-sm-1 themed-grid-col" style="background-color:LightSeaGreen;">LightSeaGreen</div>
+  <div class="hex87CEFA col-sm-1 themed-grid-col" style="background-color:LightSkyBlue;">LightSkyBlue</div>
+  <div class="hex778899 col-sm-1 themed-grid-col" style="background-color:LightSlateGray;">LightSlateGray</div>
+  <div class="hexB0C4DE col-sm-1 themed-grid-col" style="background-color:LightSteelBlue;">LightSteelBlue</div>
+  <div class="hexFFFFE0 col-sm-1 themed-grid-col" style="background-color:LightYellow;">LightYellow</div>
+  <div class="hex00FF00 col-sm-1 themed-grid-col" style="background-color:Lime;">Lime</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">8</div>
+  <div class="hex32CD32 col-sm-1 themed-grid-col" style="background-color:LimeGreen;">LimeGreen</div>
+  <div class="hexFAF0E6 col-sm-1 themed-grid-col" style="background-color:Linen;">Linen</div>
+  <div class="hexFF00FF col-sm-1 themed-grid-col" style="background-color:Magenta;">Magenta</div>
+  <div class="hex800000 col-sm-1 themed-grid-col" style="background-color:Maroon;">Maroon</div>
+  <div class="hex66CDAA col-sm-1 themed-grid-col" style="background-color:MediumAquaMarine;">MediumAquaMarine</div>
+  <div class="hex0000CD col-sm-1 themed-grid-col" style="background-color:MediumBlue;">MediumBlue</div>
+  <div class="hexBA55D3 col-sm-1 themed-grid-col" style="background-color:MediumOrchid;">MediumOrchid</div>
+  <div class="hex9370D8 col-sm-1 themed-grid-col" style="background-color:MediumPurple;">MediumPurple</div>
+  <div class="hex3CB371 col-sm-1 themed-grid-col" style="background-color:MediumSeaGreen;">MediumSeaGreen</div>
+  <div class="hex7B68EE col-sm-1 themed-grid-col" style="background-color:MediumSlateBlue;">MediumSlateBlue</div>
+  <div class="hex00FA9A col-sm-1 themed-grid-col" style="background-color:MediumSpringGreen;">MediumSpringGreen</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">9</div>
+  <div class="hex48D1CC col-sm-1 themed-grid-col" style="background-color:MediumTurquoise;">MediumTurquoise</div>
+  <div class="hexC71585 col-sm-1 themed-grid-col" style="background-color:MediumVioletRed;">MediumVioletRed</div>
+  <div class="hex191970 col-sm-1 themed-grid-col" style="background-color:MidnightBlue;">MidnightBlue</div>
+  <div class="hexF5FFFA col-sm-1 themed-grid-col" style="background-color:MintCream;">MintCream</div>
+  <div class="hexFFE4E1 col-sm-1 themed-grid-col" style="background-color:MistyRose;">MistyRose</div>
+  <div class="hexFFE4B5 col-sm-1 themed-grid-col" style="background-color:Moccasin;">Moccasin</div>
+  <div class="hexFFDEAD col-sm-1 themed-grid-col" style="background-color:NavajoWhite;">NavajoWhite</div>
+  <div class="hex000080 col-sm-1 themed-grid-col" style="background-color:Navy;">Navy</div>
+  <div class="hexFDF5E6 col-sm-1 themed-grid-col" style="background-color:OldLace;">OldLace</div>
+  <div class="hex808000 col-sm-1 themed-grid-col" style="background-color:Olive;">Olive</div>
+  <div class="hex6B8E23 col-sm-1 themed-grid-col" style="background-color:OliveDrab;">OliveDrab</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">10</div>
+  <div class="hexFFA500 col-sm-1 themed-grid-col" style="background-color:Orange;">Orange</div>
+  <div class="hexFF4500 col-sm-1 themed-grid-col" style="background-color:OrangeRed;">OrangeRed</div>
+  <div class="hexDA70D6 col-sm-1 themed-grid-col" style="background-color:Orchid;">Orchid</div>
+  <div class="hexEEE8AA col-sm-1 themed-grid-col" style="background-color:PaleGoldenRod;">PaleGoldenRod</div>
+  <div class="hex98FB98 col-sm-1 themed-grid-col" style="background-color:PaleGreen;">PaleGreen</div>
+  <div class="hexAFEEEE col-sm-1 themed-grid-col" style="background-color:PaleTurquoise;">PaleTurquoise</div>
+  <div class="hexD87093 col-sm-1 themed-grid-col" style="background-color:PaleVioletRed;">PaleVioletRed</div>
+  <div class="hexFFEFD5 col-sm-1 themed-grid-col" style="background-color:PapayaWhip;">PapayaWhip</div>
+  <div class="hexFFDAB9 col-sm-1 themed-grid-col" style="background-color:PeachPuff;">PeachPuff</div>
+  <div class="hexCD853F col-sm-1 themed-grid-col" style="background-color:Peru;">Peru</div>
+  <div class="hexFFC0CB col-sm-1 themed-grid-col" style="background-color:Pink;">Pink</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">11</div>
+  <div class="hexDDA0DD col-sm-1 themed-grid-col" style="background-color:Plum;">Plum</div>
+  <div class="hexB0E0E6 col-sm-1 themed-grid-col" style="background-color:PowderBlue;">PowderBlue</div>
+  <div class="hex800080 col-sm-1 themed-grid-col" style="background-color:Purple;">Purple</div>
+  <div class="hexFF0000 col-sm-1 themed-grid-col" style="background-color:Red;">Red</div>
+  <div class="hexBC8F8F col-sm-1 themed-grid-col" style="background-color:RosyBrown;">RosyBrown</div>
+  <div class="hex4169E1 col-sm-1 themed-grid-col" style="background-color:RoyalBlue;">RoyalBlue</div>
+  <div class="hex8B4513 col-sm-1 themed-grid-col" style="background-color:SaddleBrown;">SaddleBrown</div>
+  <div class="hexFA8072 col-sm-1 themed-grid-col" style="background-color:Salmon;">Salmon</div>
+  <div class="hexF4A460 col-sm-1 themed-grid-col" style="background-color:SandyBrown;">SandyBrown</div>
+  <div class="hex2E8B57 col-sm-1 themed-grid-col" style="background-color:SeaGreen;">SeaGreen</div>
+  <div class="hexFFF5EE col-sm-1 themed-grid-col" style="background-color:SeaShell;">SeaShell</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">12</div>
+  <div class="hexA0522D col-sm-1 themed-grid-col" style="background-color:Sienna;">Sienna</div>
+  <div class="hexC0C0C0 col-sm-1 themed-grid-col" style="background-color:Silver;">Silver</div>
+  <div class="hex87CEEB col-sm-1 themed-grid-col" style="background-color:SkyBlue;">SkyBlue</div>
+  <div class="hex6A5ACD col-sm-1 themed-grid-col" style="background-color:SlateBlue;">SlateBlue</div>
+  <div class="hex708090 col-sm-1 themed-grid-col" style="background-color:SlateGray;">SlateGray</div>
+  <div class="hexFFFAFA col-sm-1 themed-grid-col" style="background-color:Snow;">Snow</div>
+  <div class="hex00FF7F col-sm-1 themed-grid-col" style="background-color:SpringGreen;">SpringGreen</div>
+  <div class="hex4682B4 col-sm-1 themed-grid-col" style="background-color:SteelBlue;">SteelBlue</div>
+  <div class="hexD2B48C col-sm-1 themed-grid-col" style="background-color:Tan;">Tan</div>
+  <div class="hex008080 col-sm-1 themed-grid-col" style="background-color:Teal;">Teal</div>
+  <div class="hexD8BFD8 col-sm-1 themed-grid-col" style="background-color:Thistle;">Thistle</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">13</div>
+  <div class="hexFF6347 col-sm-1 themed-grid-col" style="background-color:Tomato;">Tomato</div>
+  <div class="hex40E0D0 col-sm-1 themed-grid-col" style="background-color:Turquoise;">Turquoise</div>
+  <div class="hexEE82EE col-sm-1 themed-grid-col" style="background-color:Violet;">Violet</div>
+  <div class="hexF5DEB3 col-sm-1 themed-grid-col" style="background-color:Wheat;">Wheat</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="background-color:White;">White</div>
+  <div class="hexF5F5F5 col-sm-1 themed-grid-col" style="background-color:WhiteSmoke;">WhiteSmoke</div>
+  <div class="hexFFFF00 col-sm-1 themed-grid-col" style="background-color:Yellow;">Yellow</div>
+  <div class="hex9ACD32 col-sm-1 themed-grid-col" style="background-color:YellowGreen;">YellowGreen</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col" style="background-color:;">black</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col" style="background-color:;">black</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col" style="background-color:;">black</div>
+</div>
+
+
+
+<div class="row mb-3 text-center">
+  <div class=" col-4 ">.col-4</div>
+  <div class="col-4 themed-grid-col">.col-4</div>
+  <div class="block0 col-4 themed-grid-col">BLOCK0</div>
+</div>
+
+    <header>
+        <h1 class="text-white">BOOLIAN HUE - FFFFFF OOOOOO</h1>
+    </header>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">F's and 0's</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">14</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">White</div>
+  <div class="hexFF0000 col-sm-1 themed-grid-col">Red</div>
+  <div class="hex00FF00 col-sm-1 themed-grid-col">Green</div>
+  <div class="hex0000FF col-sm-1 themed-grid-col">Blue</div>
+  <div class="hex00FFFF col-sm-1 themed-grid-col">Cyan</div>
+  <div class="hexFFFF00 col-sm-1 themed-grid-col">Yellow</div>
+  <div class="hexFF00FF col-sm-1 themed-grid-col">Magenta</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">Black</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">14</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">#FFFFFF</div>
+  <div class="hexFF0000 col-sm-1 themed-grid-col">#FF0000</div>
+  <div class="hex00FF00 col-sm-1 themed-grid-col">#00FF00</div>
+  <div class="hex0000FF col-sm-1 themed-grid-col">#0000FF</div>
+  <div class="hex00FFFF col-sm-1 themed-grid-col">#00FFFF</div>
+  <div class="hexFFFF00 col-sm-1 themed-grid-col">#FFFF00</div>
+  <div class="hexFF00FF col-sm-1 themed-grid-col">#FF00FF</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">#000000</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+</div>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">C's and 0's</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">14</div>
+  <div class="hexCCCCCC col-sm-1 themed-grid-col">White</div>
+  <div class="hexCC0000 col-sm-1 themed-grid-col">Red</div>
+  <div class="hex00CC00 col-sm-1 themed-grid-col">Green</div>
+  <div class="hex0000CC col-sm-1 themed-grid-col">Blue</div>
+  <div class="hex00CCCC col-sm-1 themed-grid-col">Cyan</div>
+  <div class="hexCCCC00 col-sm-1 themed-grid-col">Yellow</div>
+  <div class="hexCC00CC col-sm-1 themed-grid-col">Magenta</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">Black</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">14</div>
+  <div class="hexCCCCCC col-sm-1 themed-grid-col">#CCCCCC</div>
+  <div class="hexCC0000 col-sm-1 themed-grid-col">#CC0000</div>
+  <div class="hex00CC00 col-sm-1 themed-grid-col">#00CC00</div>
+  <div class="hex0000CC col-sm-1 themed-grid-col">#0000CC</div>
+  <div class="hex00CCCC col-sm-1 themed-grid-col">#00CCCC</div>
+  <div class="hexCCCC00 col-sm-1 themed-grid-col">#CCCC00</div>
+  <div class="hexCC00CC col-sm-1 themed-grid-col">#CC00CC</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">#000000</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+</div>
+
+    <header>
+        <h1 class="text-white">BOOTSTRAP COLORS</h1>
+    </header>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">Bootstrap Colors 1</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">15</div>
+  <div class="hex0d6efd col-sm-1 themed-grid-col">blue</div>
+  <div class="hex6610f2 col-sm-1 themed-grid-col">indigo</div>
+  <div class="hex6f42c1 col-sm-1 themed-grid-col">purple</div>
+  <div class="hexd63384 col-sm-1 themed-grid-col">pink</div>
+  <div class="hexdc3545 col-sm-1 themed-grid-col">red</div>
+  <div class="hexfd7e14 col-sm-1 themed-grid-col">orange</div>
+  <div class="hexffc107 col-sm-1 themed-grid-col">yellow</div>
+  <div class="hex198754 col-sm-1 themed-grid-col">green</div>
+  <div class="hex20c997 col-sm-1 themed-grid-col">teal</div>
+  <div class="hex0dcaf0 col-sm-1 themed-grid-col">cyan</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">white</div>
+</div>
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">15</div>
+  <div class="hex0d6efd col-sm-1 themed-grid-col">#0d6efd</div>
+  <div class="hex6610f2 col-sm-1 themed-grid-col">#6610f2</div>
+  <div class="hex6f42c1 col-sm-1 themed-grid-col">#6f42c1</div>
+  <div class="hexd63384 col-sm-1 themed-grid-col">#d63384</div>
+  <div class="hexdc3545 col-sm-1 themed-grid-col">#dc3545</div>
+  <div class="hexfd7e14 col-sm-1 themed-grid-col">#fd7e14</div>
+  <div class="hexffc107 col-sm-1 themed-grid-col">#ffc107</div>
+  <div class="hex198754 col-sm-1 themed-grid-col">#198754</div>
+  <div class="hex20c997 col-sm-1 themed-grid-col">#20c997</div>
+  <div class="hex0dcaf0 col-sm-1 themed-grid-col">#0dcaf0</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col">#FFFFFF</div>
+</div>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">Bootstrap Colors 2</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">16</div>
+  <div class="hex6c757d col-sm-1 themed-grid-col">Gray</div>
+  <div class="hex343a40 col-sm-1 themed-grid-col">Dark Gray</div>
+  <div class="hexf8f9fa col-sm-1 themed-grid-col">100 Gray</div>
+  <div class="hexe9ecef col-sm-1 themed-grid-col">200 Gray</div>
+  <div class="hexdee2e6 col-sm-1 themed-grid-col">300 Gray</div>
+  <div class="hexced4da col-sm-1 themed-grid-col">400 Gray</div>
+  <div class="hexadb5bd col-sm-1 themed-grid-col">500 Gray</div>
+  <div class="hex6c757d col-sm-1 themed-grid-col">600 Gray</div>
+  <div class="hex495057 text-white col-sm-1 themed-grid-col">700 Gray</div>
+  <div class="hex343a40 text-white col-sm-1 themed-grid-col">800 Gray</div>
+  <div class="hex212529 text-white col-sm-1 themed-grid-col">900 Gray</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">16</div>
+  <div class="hex6c757d col-sm-1 themed-grid-col">#6c757d</div>
+  <div class="hex343a40 col-sm-1 themed-grid-col">#343a40</div>
+  <div class="hexf8f9fa col-sm-1 themed-grid-col">#f8f9fa</div>
+  <div class="hexe9ecef col-sm-1 themed-grid-col">#e9ecef</div>
+  <div class="hexdee2e6 col-sm-1 themed-grid-col">#dee2e6</div>
+  <div class="hexced4da col-sm-1 themed-grid-col">#ced4da</div>
+  <div class="hexadb5bd col-sm-1 themed-grid-col">#adb5bd</div>
+  <div class="hex6c757d col-sm-1 themed-grid-col">#6c757d</div>
+  <div class="hex495057 text-white col-sm-1 themed-grid-col">#495057</div>
+  <div class="hex343a40 text-white col-sm-1 themed-grid-col">#343a40</div>
+  <div class="hex212529 text-white col-sm-1 themed-grid-col">#212529</div>
+</div>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">Bootstrap Colors 3</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">17</div>
+  <div class="hex0d6efd col-sm-1 themed-grid-col">Primary</div>
+  <div class="hex6c757d col-sm-1 themed-grid-col">Secondary</div>
+  <div class="hex198754 col-sm-1 themed-grid-col">Success</div>
+  <div class="hexdc3545 col-sm-1 themed-grid-col">Danger</div>
+  <div class="hexffc107 col-sm-1 themed-grid-col">Warning</div>
+  <div class="hex0dcaf0 col-sm-1 themed-grid-col">Info</div>
+  <div class="hexf8f9fa col-sm-1 themed-grid-col">Light</div>
+  <div class="hex212529 col-sm-1 themed-grid-col">Dark</div>
+  <div class="hex text-white col-sm-1 themed-grid-col">Link</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">Black</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">Black</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">17</div>
+  <div class="hex0d6efd col-sm-1 themed-grid-col">#0d6efd</div>
+  <div class="hex6c757d col-sm-1 themed-grid-col">#6c757d</div>
+  <div class="hex198754 col-sm-1 themed-grid-col">#198754</div>
+  <div class="hexdc3545 col-sm-1 themed-grid-col">#dc3545</div>
+  <div class="hexffc107 col-sm-1 themed-grid-col">#ffc107</div>
+  <div class="hex0dcaf0 col-sm-1 themed-grid-col">#0dcaf0</div>
+  <div class="hexf8f9fa col-sm-1 themed-grid-col">#f8f9fa</div>
+  <div class="hex212529 col-sm-1 themed-grid-col">#212529</div>
+  <div class="hex text-white col-sm-1 themed-grid-col">hex</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">#000000</div>
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">#000000</div>
+</div>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">Bootstrap Colors 3</div>
+</div>
+
+<div class="d-flex gap-2 justify-content-center py-5">
+  <button class="btn btn-primary rounded-pill px-3" type="button">Primary</button>
+  <button class="btn btn-secondary rounded-pill px-3" type="button">Secondary</button>
+  <button class="btn btn-success rounded-pill px-3" type="button">Success</button>
+  <button class="btn btn-danger rounded-pill px-3" type="button">Danger</button>
+  <button class="btn btn-warning rounded-pill px-3" type="button">Warning</button>
+  <button class="btn btn-info rounded-pill px-3" type="button">Info</button>
+  <button class="btn btn-light rounded-pill px-3" type="button">Light</button>
+  <button class="btn btn-dark rounded-pill px-3" type="button">Dark</button>
+  <button class="btn btn-link rounded-pill px-3" type="button">Link</button>
+</div>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">Bottom breaker</div>
+</div>
+
+
+
+    <header>
+        <h1 class="text-white">COLOR EXPERIMENT ZONE</h1>
+    </header>
+
+
+
+<h1 style="color:Tomato;">Tomato</h1>
+<p style="color:DodgerBlue;">DodgerBlue</p>
+<p style="color:MediumSeaGreen;">MediumSeaGreen</p>
+
+<h1 style="color:#FF0000;">#FF0000</h1>
+<p style="color:#0000FF;">#0000FF</p>
+<p style="color:#00FF00;">#00FF00</p>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">experiment one - bs-text-emphasis</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">18</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#052c65;">#052c65</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#2b2f32;">#2b2f32</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#0a3622;">#0a3622</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#055160;">#055160</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#664d03;">#664d03</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#58151c;">#58151c</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#495057;">#495057</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#495057;">#495057</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">18</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#052c65;">#052c65</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#2b2f32;">#2b2f32</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#0a3622;">#0a3622</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#055160;">#055160</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#664d03;">#664d03</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#58151c;">#58151c</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#495057;">#495057</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#495057;">#495057</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+</div>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">experiment two - bs-bg-subtle</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">19</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#cfe2ff;">#cfe2ff</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#e2e3e5;">#e2e3e5</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#d1e7dd;">#d1e7dd</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#cff4fc;">#cff4fc</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#fff3cd;">#fff3cd</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#f8d7da;">#f8d7da</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#fcfcfd;">#fcfcfd</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#ced4da;">#ced4da</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">19</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#cfe2ff;">#cfe2ff</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#e2e3e5;">#e2e3e5</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#d1e7dd;">#d1e7dd</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#cff4fc;">#cff4fc</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#fff3cd;">#fff3cd</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#f8d7da;">#f8d7da</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#fcfcfd;">#fcfcfd</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#ced4da;">#ced4da</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+</div>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">experiment two - bs-border-subtle</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">20</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#9ec5fe;">#9ec5fe</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#c4c8cb;">#c4c8cb</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#a3cfbb;">#a3cfbb</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#9eeaf9;">#9eeaf9</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#ffe69c;">#ffe69c</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#f1aeb5;">#f1aeb5</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#e9ecef;">#e9ecef</div>
+  <div class="hex000000 col-sm-1 themed-grid-col" style="color:#adb5bd;">#adb5bd</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">20</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#9ec5fe;">#9ec5fe</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#c4c8cb;">#c4c8cb</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#a3cfbb;">#a3cfbb</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#9eeaf9;">#9eeaf9</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#ffe69c;">#ffe69c</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#f1aeb5;">#f1aeb5</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#e9ecef;">#e9ecef</div>
+  <div class="hexFFFFFF col-sm-1 themed-grid-col" style="color:#adb5bd;">#adb5bd</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+  <div class="hex000000 col-sm-1 themed-grid-col">#</div>
+</div>
+
+<div class="row mb-3 text-center">
+  <div class="text-white">experiment three - WINDOWS 11 BG COLORS</div>
+</div>
+
+<div class="row">
+  <div class="hex000000 text-white col-sm-1 themed-grid-col">21</div>
+  <div class="hexFF8C00 col-sm-1 themed-grid-col">#FF8C00</div>
+  <div class="hexE81123 col-sm-1 themed-grid-col">#E81123</div>
+  <div class="hexD13438 col-sm-1 themed-grid-col">#D13438</div>
+  <div class="hexC30052 col-sm-1 themed-grid-col">#C30052</div>
+  <div class="hexBF0077 col-sm-1 themed-grid-col">#BF0077</div>
+  <div class="hex9A0089 col-sm-1 themed-grid-col">#9A0089</div>
+  <div class="hex881798 col-sm-1 themed-grid-col">#881798</div>
+  <div class="hex744DA9 col-sm-1 themed-grid-col">#744DA9</div>
+  <div class="hex10893E col-sm-1 themed-grid-col">#10893E</div>
+  <div class="hex107C10 col-sm-1 themed-grid-col">#107C10</div>
+  <div class="hex018574 col-sm-1 themed-grid-col">#018574</div>
+</div>
+
+
+
+<div class="row">
+  <div class="hex2D7D9A col-sm-1 themed-grid-col">#2D7D9A</div>
+  <div class="hex0062B1 col-sm-1 themed-grid-col">#0062B1</div>
+  <div class="hex6B69D6 col-sm-1 themed-grid-col">#6B69D6</div>
+  <div class="hex8E8CD8 col-sm-1 themed-grid-col">#8E8CD8</div>
+  <div class="hex8764B8 col-sm-1 themed-grid-col">#8764B8</div>
+  <div class="hex038387 col-sm-1 themed-grid-col">#038387</div>
+  <div class="hex486860 col-sm-1 themed-grid-col">#486860</div>
+  <div class="hex525E54 col-sm-1 themed-grid-col">#525E54</div>
+  <div class="hex7E735F col-sm-1 themed-grid-col">#7E735F</div>
+  <div class="hex4C4A48 col-sm-1 themed-grid-col">#4C4A48</div>
+  <div class="hex515C6B col-sm-1 themed-grid-col">#515C6B</div>
+  <div class="hex4A5459 col-sm-1 themed-grid-col">#4A5459</div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</main>
+
+{% endblock %}

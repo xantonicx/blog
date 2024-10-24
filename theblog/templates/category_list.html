@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Blog Categories{% endblock %}
+
+
+
+{% block content %}
+      	{% if user.is_authenticated %}
+
+      	<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Second column content -->
+            <label for="input2">To add a New Category to this list. Click New Category.</label>
+            <br/>
+            <a class="btn btn-primary" href="{% url 'add_category' %}" role="button">New Category</a>
+            <br/><br/>
+        </div>
+    </div><!-- row ends -->
+
+</div>
+		{% endif %}
+
+	
+
+
+
+		{% for item in cat_menu_list %}
+           <h4><a class="dropdown-item" href="{% url 'category' item|slugify %}">{{ item }}</a></h4>
+        
+        {% endfor %}
+
+
+{% endblock %}

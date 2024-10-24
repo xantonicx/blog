@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title_tag }}{% endblock %}
+
+
+
+{% block content %}
+    <center>
+    <h1>Standard Calculator</h1>
+    <form method="post">
+        {% csrf_token %}
+
+
+
+        <br/><br/>
+
+        <button class="btn btn-info" type="submit" name="operation" value="add">Add</button>
+        <button class="btn btn-warning" type="submit" name="operation" value="subtract">Subtract</button>
+        <button class="btn btn-danger" type="submit" name="operation" value="multiply">Multiply</button>
+        <button class="btn btn-primary" type="submit" name="operation" value="divide">Divide</button>
+        <br/><br/>
+        <button class="btn hex99B9FC" type="submit" name="operation" value="sqrt">Square Root</button>
+        <button class="btn hex6698FD" type="submit" name="operation" value="square">Square</button>
+        <button class="btn hex3376FE" type="submit" name="operation" value="reciprocal">Reciprocal</button>
+        <button class="btn hex0055FF" type="submit" name="operation" value="percentage">Percentage</button>
+        <br/><br/>
+
+      
+        <button class="btn btn-warning" type="submit" name="operation" value="inch_to_cm">Inch_to_Cm</button>
+        <button class="btn btn-warning" type="submit" name="operation" value="cm_to_inch">Cm_to_Inch</button>
+<br/><br/>
+        <button class="btn btn-danger" type="submit" name="operation" value="feet_to_meter">Feet_to_Meter</button>
+        <button class="btn btn-danger" type="submit" name="operation" value="meter_to_feet">Meter_to_Feet</button>
+<br/><br/>
+        <button class="btn btn-info" type="submit" name="operation" value="mile_to_km">Mile_to_Km</button>
+        <button class="btn btn-info" type="submit" name="operation" value="km_to_mile">Km_to_Mile</button>
+
+<br/><br/>
+        <input type="number" name="num1" placeholder="0" step="any" required>
+        <input type="number" name="num2" placeholder="0" step="any" value="0">
+<br/><br/>
+
+        <button class="btn btn-warning" type="submit" name="operation" value="inch_to_cm">aThist_to_that</button>
+        <button class="btn btn-warning" type="submit" name="operation" value="cm_to_inch">aThat_to_this</button>
+<br/><br/>
+        <button class="btn btn-danger" type="submit" name="operation" value="feet_to_meter">bThist_to_that</button>
+        <button class="btn btn-danger" type="submit" name="operation" value="meter_to_feet">bThat_to_this</button>
+<br/><br/>
+        <button class="btn btn-info" type="submit" name="operation" value="mile_to_km">cThist_to_that</button>
+        <button class="btn btn-info" type="submit" name="operation" value="km_to_mile">cThat_to_this</button>
+
+
+
+        <br/><br/>          <br/><br/>
+
+    </form>
+    {% if result7 %}
+
+        <h1>Result: {{ result7 }}</h1>
+
+
+    {% endif %}
+
+
+
+
+    
+</center>
+        	</div>
+        </div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+{% endblock %}

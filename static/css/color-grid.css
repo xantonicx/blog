@@ -1,0 +1,1772 @@
+
+
+:root {
+  --bs-columns: 12; /* Set to the desired number of columns */
+}
+
+.themed-grid-col {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  /*background-color: rgba(112.520718, 44.062154, 249.437846, .15);*/
+  border: 2px solid rgba(250, 250, 250, .3);
+}
+
+.block0 {
+  background-color: #2D2648;
+  border: 4px solid #CCC;
+  }
+
+.themed-container {
+  padding: .75rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(22, 22, 222, .15);
+  border: 22px solid rgba(66, 66, 33, .3);
+  }
+
+  .hexFFFFFF {
+  background-color: #555555;
+  border: 4px solid #000;
+  }
+
+  
+
+
+ /* /////////////////////////////ROW 1 */
+.hex000000 {
+  background-color: #000000;
+  border: 4px solid #000;
+  }
+.hex660000 {
+  background-color: #660000;
+  border: 4px solid #000;
+  }
+.hex990000 {
+  background-color: #990000;
+  border: 4px solid #000;
+  }
+.hexCC0000 {
+  background-color: #CC0000;
+  border: 4px solid #000;
+  }
+.hexFF0000 {
+  background-color: #FF0000;
+  border: 4px solid #000;
+  }
+.hexFF3333 {
+  background-color: #FF3333;
+  border: 4px solid #000;
+  }
+.hexFF6666 {
+  background-color: #FF6666;
+  border: 4px solid #000;
+  }
+.hexFF9999 {
+  background-color: #FF9999;
+  border: 4px solid #000;
+  }
+.hexFFCCCC {
+  background-color: #FFCCCC;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 2 */
+.hex0E0E0E {
+  background-color: #0E0E0E;
+  border: 4px solid #000;
+  }
+.hex662200 {
+  background-color: #662200;
+  border: 4px solid #000;
+  }
+.hex993300 {
+  background-color: #993300;
+  border: 4px solid #000;
+  }
+.hexCC4400{
+  background-color: #CC4400;
+  border: 4px solid #000;
+  }
+.hexFF5500 {
+  background-color: #FF5500;
+  border: 4px solid #000;
+  }
+.hexFF7632 {
+  background-color: #FF7632;
+  border: 4px solid #000;
+  }
+.hexFF9864 {
+  background-color: #FF9864;
+  border: 4px solid #000;
+  }
+.hexFFB996 {
+  background-color: #FFB996;
+  border: 4px solid #000;
+  }
+.hexFFDBC8 {
+  background-color: #FFDBC8;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 3 */
+.hex1C1C1C {
+  background-color: #1C1C1C;
+  border: 4px solid #000;
+  }
+.hex664400 {
+  background-color: #664400;
+  border: 4px solid #000;
+  }
+.hex996600 {
+  background-color: #996600;
+  border: 4px solid #000;
+  }
+.hexCC8800{
+  background-color: #CC8800;
+  border: 4px solid #000;
+  }
+.hexFFAA00 {
+  background-color: #FFAA00;
+  border: 4px solid #000;
+  }
+.hexFFAA32 {
+  background-color: #FFAA32;
+  border: 4px solid #000;
+  }
+.hexFFCB64 {
+  background-color: #FFCB64;
+  border: 4px solid #000;
+  }
+.hexFFDB96 {
+  background-color: #FFDB96;
+  border: 4px solid #000;
+  }
+.hexFFECC8 {
+  background-color: #FFECC8;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 4 */
+.hex2A2A2A {
+  background-color: #2A2A2A;
+  border: 4px solid #000;
+  }
+.hex666600 {
+  background-color: #666600;
+  border: 4px solid #000;
+  }
+.hex999900 {
+  background-color: #999900;
+  border: 4px solid #000;
+  }
+.hexCCCC00{
+  background-color: #CCCC00;
+  border: 4px solid #000;
+  }
+.hexFFFF00 {
+  background-color: #FFFF00;
+  border: 4px solid #000;
+  }
+.hexFFFE32 {
+  background-color: #FFFE32;
+  border: 4px solid #000;
+  }
+.hexFFFE64 {
+  background-color: #FFFE64;
+  border: 4px solid #000;
+  }
+.hexFFFD96 {
+  background-color: #FFFD96;
+  border: 4px solid #000;
+  }
+.hexFFFDC8 {
+  background-color: #FFFDC8;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 5 */
+.hex393939 {
+  background-color: #393939;
+  border: 4px solid #000;
+  }
+.hex446600 {
+  background-color: #446600;
+  border: 4px solid #000;
+  }
+.hex669900 {
+  background-color: #669900;
+  border: 4px solid #000;
+  }
+.hex88CC00{
+  background-color: #88CC00;
+  border: 4px solid #000;
+  }
+.hexAAFF00 {
+  background-color: #AAFF00;
+  border: 4px solid #000;
+  }
+.hexBBFE32 {
+  background-color: #BBFE32;
+  border: 4px solid #000;
+  }
+.hexCCFE64 {
+  background-color: #CCFE64;
+  border: 4px solid #000;
+  }
+.hexDDFD96 {
+  background-color: #DDFD96;
+  border: 4px solid #000;
+  }
+.hexEEFDC8 {
+  background-color: #EEFDC8;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 6 */
+.hex474747 {
+  background-color: #474747;
+  border: 4px solid #000;
+  }
+.hex116600 {
+  background-color: #116600;
+  border: 4px solid #000;
+  }
+.hex199900 {
+  background-color: #199900;
+  border: 4px solid #000;
+  }
+.hex22CC00{
+  background-color: #22CC00;
+  border: 4px solid #000;
+  }
+.hex2AFF00 {
+  background-color: #2AFF00;
+  border: 4px solid #000;
+  }
+.hex55FE32 {
+  background-color: #55FE32;
+  border: 4px solid #000;
+  }
+.hex7FFE64 {
+  background-color: #7FFE64;
+  border: 4px solid #000;
+  }
+.hexAAFD96 {
+  background-color: #AAFD96;
+  border: 4px solid #000;
+  }
+.hexD4FDC8 {
+  background-color: #D4FDC8;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 7 */
+.hex555555 {
+  background-color: #555555;
+  border: 4px solid #000;
+  }
+.hex006611 {
+  background-color: #006611;
+  border: 4px solid #000;
+  }
+.hex00991A {
+  background-color: #00991A;
+  border: 4px solid #000;
+  }
+.hex00CC22{
+  background-color: #00CC22;
+  border: 4px solid #000;
+  }
+.hex00FF2B {
+  background-color: #00FF2B;
+  border: 4px solid #000;
+  }
+.hex33FE54 {
+  background-color: #33FE54;
+  border: 4px solid #000;
+  }
+.hex66FE7E {
+  background-color: #66FE7E;
+  border: 4px solid #000;
+  }
+.hex99FDA7 {
+  background-color: #99FDA7;
+  border: 4px solid #000;
+  }
+.hexCCFDD1 {
+  background-color: #CCFDD1;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 8 */
+.hex636363 {
+  background-color: #636363;
+  border: 4px solid #000;
+  }
+.hex006633 {
+  background-color: #006633;
+  border: 4px solid #000;
+  }
+.hex00994D {
+  background-color: #00994D;
+  border: 4px solid #000;
+  }
+.hex00CC66{
+  background-color: #00CC66;
+  border: 4px solid #000;
+  }
+.hex00FF80 {
+  background-color: #00FF80;
+  border: 4px solid #000;
+  }
+.hex33FE98 {
+  background-color: #33FE98;
+  border: 4px solid #000;
+  }
+.hex66FE98 {
+  background-color: #66FE98;
+  border: 4px solid #000;
+  }
+.hex99FDC9 {
+  background-color: #99FDC9;
+  border: 4px solid #000;
+  }
+.hexCCFDE2 {
+  background-color: #CCFDE2;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 9 */
+.hex717171 {
+  background-color: #717171;
+  border: 4px solid #000;
+  }
+.hex006655 {
+  background-color: #006655;
+  border: 4px solid #000;
+  }
+.hex00997F {
+  background-color: #00997F;
+  border: 4px solid #000;
+  }
+.hex00CCAA{
+  background-color: #00CCAA;
+  border: 4px solid #000;
+  }
+.hex00FFD4 {
+  background-color: #00FFD4;
+  border: 4px solid #000;
+  }
+.hex33FEDC {
+  background-color: #33FEDC;
+  border: 4px solid #000;
+  }
+.hex66FEE3 {
+  background-color: #66FEE3;
+  border: 4px solid #000;
+  }
+.hex99FDEB {
+  background-color: #99FDEB;
+  border: 4px solid #000;
+  }
+.hexCCFDF2 {
+  background-color: #CCFDF2;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 10 */
+.hex7F7F7F {
+  background-color: #7F7F7F;
+  border: 4px solid #000;
+  }
+.hex005566 {
+  background-color: #005566;
+  border: 4px solid #000;
+  }
+.hex007F99 {
+  background-color: #007F99;
+  border: 4px solid #000;
+  }
+.hex00AACC{
+  background-color: #00AACC;
+  border: 4px solid #000;
+  }
+.hex00D4FF {
+  background-color: #00D4FF;
+  border: 4px solid #000;
+  }
+.hex33DCFE {
+  background-color: #33DCFE;
+  border: 4px solid #000;
+  }
+.hex66E4FD {
+  background-color: #66E4FD;
+  border: 4px solid #000;
+  }
+.hex99ECFC {
+  background-color: #99ECFC;
+  border: 4px solid #000;
+  }
+.hexCCF4FB {
+  background-color: #CCF4FB;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 11 */
+.hex8E8E8E {
+  background-color: #8E8E8E;
+  border: 4px solid #000;
+  }
+.hex004466 {
+  background-color: #004466;
+  border: 4px solid #000;
+  }
+.hex006699 {
+  background-color: #006699;
+  border: 4px solid #000;
+  }
+.hex0088CC {
+  background-color: #0088CC;
+  border: 4px solid #000;
+  }
+.hex00AAFF {
+  background-color: #00AAFF;
+  border: 4px solid #000;
+  }
+.hex33BAFE {
+  background-color: #33BAFE;
+  border: 4px solid #000;
+  }
+.hex66CBFD {
+  background-color: #66CBFD;
+  border: 4px solid #000;
+  }
+.hex99DBFC {
+  background-color: #99DBFC;
+  border: 4px solid #000;
+  }
+.hexCCECFB {
+  background-color: #CCECFB;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 12 */
+.hex9C9C9C {
+  background-color: #9C9C9C;
+  border: 4px solid #000;
+  }
+.hex002266 {
+  background-color: #002266;
+  border: 4px solid #000;
+  }
+.hex003399 {
+  background-color: #003399;
+  border: 4px solid #000;
+  }
+.hex0044CC {
+  background-color: #0044CC;
+  border: 4px solid #000;
+  }
+.hex0055FF {
+  background-color: #0055FF;
+  border: 4px solid #000;
+  }
+.hex3376FE {
+  background-color: #3376FE;
+  border: 4px solid #000;
+  }
+.hex6698FD {
+  background-color: #6698FD;
+  border: 4px solid #000;
+  }
+.hex99B9FC {
+  background-color: #99B9FC;
+  border: 4px solid #000;
+  }
+.hexCCDBFB {
+  background-color: #CCDBFB;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 13 */
+.hexAAAAAA {
+  background-color: #AAAAAA;
+  border: 4px solid #000;
+  }
+.hex000066 {
+  background-color: #000066;
+  border: 4px solid #000;
+  }
+.hex000099 {
+  background-color: #000099;
+  border: 4px solid #000;
+  }
+.hex0000CC{
+  background-color: #0000CC;
+  border: 4px solid #000;
+  }
+.hex0000FF {
+  background-color: #0000FF;
+  border: 4px solid #000;
+  }
+.hex3332FE {
+  background-color: #3332FE;
+  border: 4px solid #000;
+  }
+.hex6665FD {
+  background-color: #6665FD;
+  border: 4px solid #000;
+  }
+.hex9997FC {
+  background-color: #9997FC;
+  border: 4px solid #000;
+  }
+.hexCCCAFB {
+  background-color: #CCCAFB;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 14 */
+.hexB8B8B8 {
+  background-color: #B8B8B8;
+  border: 4px solid #000;
+  }
+.hex220066 {
+  background-color: #220066;
+  border: 4px solid #000;
+  }
+.hex330099 {
+  background-color: #330099;
+  border: 4px solid #000;
+  }
+.hex4400CC {
+  background-color: #4400CC;
+  border: 4px solid #000;
+  }
+.hex5500FF {
+  background-color: #5500FF;
+  border: 4px solid #000;
+  }
+.hex7732FE {
+  background-color: #7732FE;
+  border: 4px solid #000;
+  }
+.hex9965FD {
+  background-color: #9965FD;
+  border: 4px solid #000;
+  }
+.hexBB97FC {
+  background-color: #BB97FC;
+  border: 4px solid #000;
+  }
+.hexDDCAFB {
+  background-color: #DDCAFB;
+  border: 4px solid #000;
+  }
+
+  /* /////////////////////////////ROW 15 */
+.hexC6C6C6 {
+  background-color: #C6C6C6;
+  border: 4px solid #000;
+  }
+.hex440066 {
+  background-color: #440066;
+  border: 4px solid #000;
+  }
+.hex660099 {
+  background-color: #660099;
+  border: 4px solid #000;
+  }
+.hex8800CC{
+  background-color: #8800CC;
+  border: 4px solid #000;
+  }
+.hexAA00FF {
+  background-color: #AA00FF;
+  border: 4px solid #000;
+  }
+.hexBB32FE {
+  background-color: #BB32FE;
+  border: 4px solid #000;
+  }
+.hexCC56FD {
+  background-color: #CC56FD;
+  border: 4px solid #000;
+  }
+.hexDD97FC {
+  background-color: #DD97FC;
+  border: 4px solid #000;
+  }
+.hexEECAFB {
+  background-color: #EECAFB;
+  border: 4px solid #000;
+  }
+
+
+  /* /////////////////////////////ROW 16 */
+.hexD4D4D4 {
+  background-color: #D4D4D4;
+  border: 4px solid #000;
+  }
+.hex660066 {
+  background-color: #660066;
+  border: 4px solid #000;
+  }
+.hex990099 {
+  background-color: #990099;
+  border: 4px solid #000;
+  }
+.hexCC00CC{
+  background-color: #CC00CC;
+  border: 4px solid #000;
+  }
+.hexFF00FF {
+  background-color: #FF00FF;
+  border: 4px solid #000;
+  }
+.hexFF32FE {
+  background-color: #FF32FE;
+  border: 4px solid #000;
+  }
+.hexFF65FD {
+  background-color: #FF65FD;
+  border: 4px solid #000;
+  }
+.hexFF97FC {
+  background-color: #FF97FC;
+  border: 4px solid #000;
+  }
+.hexFFCAFB {
+  background-color: #FFCAFB;
+  border: 4px solid #000;
+  }
+
+/* /////////////////////////////ROW 17 */
+  .hexE3E3E3 {
+  background-color: #E3E3E3;
+  border: 4px solid #000;
+  }
+.hex660044 {
+  background-color: #660044;
+  border: 4px solid #000;
+  }
+.hex990066 {
+  background-color: #990066;
+  border: 4px solid #000;
+  }
+.hexCC0088 {
+  background-color: #CC0088;
+  border: 4px solid #000;
+  }
+.hexFF00AA {
+  background-color: #FF00AA;
+  border: 4px solid #000;
+  }
+.hexFF32BA {
+  background-color: #FF32BA;
+  border: 4px solid #000;
+  }
+.hexFF65CA {
+  background-color: #FF65CA;
+  border: 4px solid #000;
+  }
+.hexFF97DA {
+  background-color: #FF97DA;
+  border: 4px solid #000;
+  }
+.hexFFCAEA {
+  background-color: #FFCAEA;
+  border: 4px solid #000;
+  }
+
+
+/* /////////////////////////////ROW 18 */
+  .hexF1F1F1 {
+  background-color: #F1F1F1;
+  border: 4px solid #000;
+  }
+.hex660022 {
+  background-color: #660022;
+  border: 4px solid #000;
+  }
+.hex990033 {
+  background-color: #990033;
+  border: 4px solid #000;
+  }
+.hexCC0044 {
+  background-color: #CC0044;
+  border: 4px solid #000;
+  }
+.hexFF0055 {
+  background-color: #FF0055;
+  border: 4px solid #000;
+  }
+.hexFF3276 {
+  background-color: #FF3276;
+  border: 4px solid #000;
+  }
+.hexFF6597 {
+  background-color: #FF6597;
+  border: 4px solid #000;
+  }
+.hexFF97B8 {
+  background-color: #FF97B8;
+  border: 4px solid #000;
+  }
+.hexFFCAD9 {
+  background-color: #FFCAD9;
+  border: 4px solid #000;
+  }
+
+
+/* /////////////////////////////ROW 19 */
+  .hexFFFFFF {
+  background-color: #FFFFFF;
+  border: 4px solid #000;
+  }
+.hex660011 {
+  background-color: #660011;
+  border: 4px solid #000;
+  }
+.hex990019 {
+  background-color: #990019;
+  border: 4px solid #000;
+  }
+.hexCC0022 {
+  background-color: #CC0022;
+  border: 4px solid #000;
+  }
+.hexFF002A {
+  background-color: #FF002A;
+  border: 4px solid #000;
+  }
+.hexFF3254 {
+  background-color: #FF3254;
+  border: 4px solid #000;
+  }
+.hexFF657D {
+  background-color: #FF657D;
+  border: 4px solid #000;
+  }
+.hexFF97A7 {
+  background-color: #FF97A7;
+  border: 4px solid #000;
+  }
+.hexFFCAD0 {
+  background-color: #FFCAD0;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 1-////////////////////////////
+AliceBlue   #F0F8FF  
+AntiqueWhite  #FAEBD7  
+Aqua  #00FFFF  
+Aquamarine  #7FFFD4  
+Azure   #F0FFFF  
+Beige   #F5F5DC  
+Bisque  #FFE4C4  
+Black   #000000  
+BlanchedAlmond  #FFEBCD  
+Blue  #0000FF  
+BlueViolet  #8A2BE2 
+/////////////////////////////////////////////////////////////////////////////*/
+.hexF0F8FF {
+  background-color: #F0F8FF;
+  border: 4px solid #000;
+  }
+.hexFAEBD7 {
+  background-color: #FAEBD7;
+  border: 4px solid #000;
+  }
+.hex00FFFF {
+  background-color: #00FFFF;
+  border: 4px solid #000;
+  }
+.hex7FFFD4 {
+  background-color: #7FFFD4;
+  border: 4px solid #000;
+  }
+.hexF0FFFF {
+  background-color: #F0FFFF;
+  border: 4px solid #000;
+  }
+.hexF5F5DC {
+  background-color: #F5F5DC;
+  border: 4px solid #000;
+  }
+.hexFFE4C4 {
+  background-color: #FFE4C4;
+  border: 4px solid #000;
+  }
+.hex000000 {
+  background-color: #000000;
+  border: 4px solid #000;
+  }
+.hexFFEBCD {
+  background-color: #FFEBCD;
+  border: 4px solid #000;
+  }
+.hex0000FF {
+  background-color: #0000FF;
+  border: 4px solid #000;
+  }
+.hex8A2BE2 {
+  background-color: #8A2BE2;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 2-////////////////////////////
+2
+Brown   #A52A2A  
+BurlyWood   #DEB887  
+CadetBlue   #5F9EA0  
+Chartreuse  #7FFF00  
+Chocolate   #D2691E  
+Coral   #FF7F50  
+CornflowerBlue  #6495ED
+Cornsilk  #FFF8DC
+Crimson   #DC143C
+Cyan  #00FFFF
+DarkBlue  #00008B
+/////////////////////////////////////////////////////////////////////////////*/
+.hexA52A2A {
+  background-color: #A52A2A;
+  border: 4px solid #000;
+  }
+.hexDEB887 {
+  background-color: #DEB887;
+  border: 4px solid #000;
+  }
+.hex5F9EA0 {
+  background-color: #5F9EA0;
+  border: 4px solid #000;
+  }
+.hex7FFF00 {
+  background-color: #7FFF00;
+  border: 4px solid #000;
+  }
+.hexD2691E {
+  background-color: #D2691E;
+  border: 4px solid #000;
+  }
+.hexFF7F50 {
+  background-color: #FF7F50;
+  border: 4px solid #000;
+  }
+.hex6495ED {
+  background-color: #6495ED;
+  border: 4px solid #000;
+  }
+.hexFFF8DC {
+  background-color: #FFF8DC;
+  border: 4px solid #000;
+  }
+.hexDC143C {
+  background-color: #DC143C;
+  border: 4px solid #000;
+  }
+.hex00FFFF {
+  background-color: #00FFFF;
+  border: 4px solid #000;
+  }
+.hex00008B {
+  background-color: #00008B;
+  border: 4px solid #000;
+  }
+/* ///////////////////////////140 color names/ROW 3-////////////////////////////
+3
+DarkCyan  #008B8B 
+DarkGoldenRod   #B8860B  
+DarkGray  #A9A9A9  
+DarkGreen   #006400  
+DarkKhaki   #BDB76B  
+DarkMagenta   #8B008B  
+DarkOliveGreen  #556B2F  
+Darkorange  #FF8C00  
+DarkOrchid  #9932CC  
+DarkRed   #8B0000  
+DarkSalmon  #E9967A  
+/////////////////////////////////////////////////////////////////////////////*/
+.hex008B8B {
+  background-color: #008B8B;
+  border: 4px solid #000;
+  }
+.hexB8860B {
+  background-color: #B8860B;
+  border: 4px solid #000;
+  }
+.hexA9A9A9 {
+  background-color: #A9A9A9;
+  border: 4px solid #000;
+  }
+.hex006400 {
+  background-color: #006400;
+  border: 4px solid #000;
+  }
+.hexBDB76B {
+  background-color: #BDB76B;
+  border: 4px solid #000;
+  }
+.hex8B008B {
+  background-color: #8B008B;
+  border: 4px solid #000;
+  }
+.hex556B2F {
+  background-color: #556B2F;
+  border: 4px solid #000;
+  }
+.hexFF8C00 {
+  background-color: #FF8C00;
+  border: 4px solid #000;
+  }
+.hex9932CC {
+  background-color: #9932CC;
+  border: 4px solid #000;
+  }
+.hex8B0000 {
+  background-color: #8B0000;
+  border: 4px solid #000;
+  }
+.hexE9967A {
+  background-color: #E9967A;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 4-////////////////////////////
+4
+DarkSeaGreen  #8FBC8F  
+DarkSlateBlue   #483D8B
+DarkSlateGray   #2F4F4F  
+DarkTurquoise   #00CED1  
+DarkViolet  #9400D3  
+DeepPink  #FF1493  
+DeepSkyBlue   #00BFFF  
+DimGray   #696969  
+DodgerBlue  #1E90FF  
+FireBrick   #B22222  
+FloralWhite   #FFFAF0  
+/////////////////////////////////////////////////////////////////////////////*/
+.hex8FBC8F {
+  background-color: #8FBC8F;
+  border: 4px solid #000;
+  }
+.hex483D8B {
+  background-color: #483D8B;
+  border: 4px solid #000;
+  }
+.hex2F4F4F {
+  background-color: #2F4F4F;
+  border: 4px solid #000;
+  }
+.hex00CED1 {
+  background-color: #00CED1;
+  border: 4px solid #000;
+  }
+.hex9400D3 {
+  background-color: #9400D3;
+  border: 4px solid #000;
+  }
+.hexFF1493 {
+  background-color: #FF1493;
+  border: 4px solid #000;
+  }
+.hex00BFFF {
+  background-color: #00BFFF;
+  border: 4px solid #000;
+  }
+.hex696969 {
+  background-color: #696969;
+  border: 4px solid #000;
+  }
+.hex1E90FF {
+  background-color: #1E90FF;
+  border: 4px solid #000;
+  }
+.hexB22222 {
+  background-color: #B22222;
+  border: 4px solid #000;
+  }
+.hexFFFAF0 {
+  background-color: #FFFAF0;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 5-////////////////////////////
+5
+ForestGreen   #228B22  
+Fuchsia   #FF00FF  
+Gainsboro   #DCDCDC  
+GhostWhite  #F8F8FF  
+Gold  #FFD700  
+GoldenRod   #DAA520  
+Gray  #808080  
+Green   #008000  
+GreenYellow   #ADFF2F  
+HoneyDew  #F0FFF0  
+HotPink   #FF69B4  
+/////////////////////////////////////////////////////////////////////////////*/
+.hex228B22 {
+  background-color: #228B22;
+  border: 4px solid #000;
+  }
+.hexFF00FF {
+  background-color: #FF00FF;
+  border: 4px solid #000;
+  }
+.hexDCDCDC {
+  background-color: #DCDCDC;
+  border: 4px solid #000;
+  }
+.hexF8F8FF {
+  background-color: #F8F8FF;
+  border: 4px solid #000;
+  }
+.hexFFD700 {
+  background-color: #FFD700;
+  border: 4px solid #000;
+  }
+.hexDAA520 {
+  background-color: #DAA520;
+  border: 4px solid #000;
+  }
+.hex808080 {
+  background-color: #808080;
+  border: 4px solid #000;
+  }
+.hex008000 {
+  background-color: #008000;
+  border: 4px solid #000;
+  }
+.hexADFF2F {
+  background-color: #ADFF2F;
+  border: 4px solid #000;
+  }
+.hexF0FFF0 {
+  background-color: #F0FFF0;
+  border: 4px solid #000;
+  }
+.hexFF69B4 {
+  background-color: #FF69B4;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 6-////////////////////////////
+6
+IndianRed   #CD5C5C  
+Indigo    #4B0082  
+Ivory   #FFFFF0  
+Khaki   #F0E68C  
+Lavender  #E6E6FA  
+LavenderBlush   #FFF0F5  
+LawnGreen   #7CFC00  
+LemonChiffon  #FFFACD  
+LightBlue   #ADD8E6  
+LightCoral  #F08080  
+LightCyan   #E0FFFF  
+/////////////////////////////////////////////////////////////////////////////*/
+.hexCD5C5C {
+  background-color: #CD5C5C;
+  border: 4px solid #000;
+  }
+.hex4B0082 {
+  background-color: #4B0082;
+  border: 4px solid #000;
+  }
+.hexFFFFF0 {
+  background-color: #FFFFF0;
+  border: 4px solid #000;
+  }
+.hexF0E68C {
+  background-color: #F0E68C;
+  border: 4px solid #000;
+  }
+.hexE6E6FA {
+  background-color: #E6E6FA;
+  border: 4px solid #000;
+  }
+.hexFFF0F5 {
+  background-color: #FFF0F5;
+  border: 4px solid #000;
+  }
+.hex7CFC00 {
+  background-color: #7CFC00;
+  border: 4px solid #000;
+  }
+.hexFFFACD {
+  background-color: #FFFACD;
+  border: 4px solid #000;
+  }
+.hexADD8E6 {
+  background-color: #ADD8E6;
+  border: 4px solid #000;
+  }
+.hexF08080 {
+  background-color: #F08080;
+  border: 4px solid #000;
+  }
+.hexE0FFFF {
+  background-color: #E0FFFF;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 7-////////////////////////////
+7
+LightGoldenRodYellow  #FAFAD2  
+LightGrey   #D3D3D3  
+LightGreen  #90EE90  
+LightPink   #FFB6C1  
+LightSalmon   #FFA07A  
+LightSeaGreen   #20B2AA  
+LightSkyBlue  #87CEFA  
+LightSlateGray  #778899  
+LightSteelBlue  #B0C4DE  
+LightYellow   #FFFFE0  
+Lime  #00FF00  
+/////////////////////////////////////////////////////////////////////////////*/
+.hexFAFAD2 {
+  background-color: #FAFAD2;
+  border: 4px solid #000;
+  }
+.hexD3D3D3 {
+  background-color: #D3D3D3;
+  border: 4px solid #000;
+  }
+.hex90EE90 {
+  background-color: #90EE90;
+  border: 4px solid #000;
+  }
+.hexFFB6C1 {
+  background-color: #FFB6C1;
+  border: 4px solid #000;
+  }
+.hexFFA07A {
+  background-color: #FFA07A;
+  border: 4px solid #000;
+  }
+.hex20B2AA {
+  background-color: #20B2AA;
+  border: 4px solid #000;
+  }
+.hex87CEFA {
+  background-color: #87CEFA;
+  border: 4px solid #000;
+  }
+.hex778899 {
+  background-color: #778899;
+  border: 4px solid #000;
+  }
+.hexB0C4DE {
+  background-color: #B0C4DE;
+  border: 4px solid #000;
+  }
+.hexFFFFE0 {
+  background-color: #FFFFE0;
+  border: 4px solid #000;
+  }
+.hex00FF00 {
+  background-color: #00FF00;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 8-////////////////////////////
+8
+LimeGreen   #32CD32  
+Linen   #FAF0E6  
+Magenta   #FF00FF  
+Maroon  #800000  
+MediumAquaMarine  #66CDAA  
+MediumBlue  #0000CD  
+MediumOrchid  #BA55D3  
+MediumPurple  #9370D8  
+MediumSeaGreen  #3CB371  
+MediumSlateBlue   #7B68EE  
+MediumSpringGreen   #00FA9A 
+/////////////////////////////////////////////////////////////////////////////*/
+.hex32CD32 {
+  background-color: #32CD32;
+  border: 4px solid #000;
+  }
+.hexFAF0E6 {
+  background-color: #FAF0E6;
+  border: 4px solid #000;
+  }
+.hexFF00FF {
+  background-color: #FF00FF;
+  border: 4px solid #000;
+  }
+.hex800000 {
+  background-color: #800000;
+  border: 4px solid #000;
+  }
+.hex66CDAA {
+  background-color: #66CDAA;
+  border: 4px solid #000;
+  }
+.hex0000CD {
+  background-color: #0000CD;
+  border: 4px solid #000;
+  }
+.hexBA55D3 {
+  background-color: #BA55D3;
+  border: 4px solid #000;
+  }
+.hex9370D8 {
+  background-color: #9370D8;
+  border: 4px solid #000;
+  }
+.hex3CB371 {
+  background-color: #3CB371;
+  border: 4px solid #000;
+  }
+.hex7B68EE {
+  background-color: #7B68EE;
+  border: 4px solid #000;
+  }
+.hex00FA9A {
+  background-color: #00FA9A;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 9-////////////////////////////
+9
+MediumTurquoise   #48D1CC  
+MediumVioletRed   #C71585  
+MidnightBlue  #191970  
+MintCream   #F5FFFA  
+MistyRose   #FFE4E1  
+Moccasin  #FFE4B5  
+NavajoWhite   #FFDEAD  
+Navy  #000080  
+OldLace   #FDF5E6  
+Olive   #808000  
+OliveDrab   #6B8E23  
+/////////////////////////////////////////////////////////////////////////////*/
+.hex48D1CC {
+  background-color: #48D1CC;
+  border: 4px solid #000;
+  }
+.hexC71585 {
+  background-color: #C71585;
+  border: 4px solid #000;
+  }
+.hex191970 {
+  background-color: #191970;
+  border: 4px solid #000;
+  }
+.hexF5FFFA {
+  background-color: #F5FFFA;
+  border: 4px solid #000;
+  }
+.hexFFE4E1 {
+  background-color: #FFE4E1;
+  border: 4px solid #000;
+  }
+.hexFFE4B5 {
+  background-color: #FFE4B5;
+  border: 4px solid #000;
+  }
+.hexFFDEAD {
+  background-color: #FFDEAD;
+  border: 4px solid #000;
+  }
+.hex000080 {
+  background-color: #000080;
+  border: 4px solid #000;
+  }
+.hexFDF5E6 {
+  background-color: #FDF5E6;
+  border: 4px solid #000;
+  }
+.hex808000 {
+  background-color: #808000;
+  border: 4px solid #000;
+  }
+.hex6B8E23 {
+  background-color: #6B8E23;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 10-////////////////////////////
+10
+Orange  #FFA500  
+OrangeRed   #FF4500  
+Orchid  #DA70D6  
+PaleGoldenRod   #EEE8AA  
+PaleGreen   #98FB98  
+PaleTurquoise   #AFEEEE  
+PaleVioletRed   #D87093  
+PapayaWhip  #FFEFD5  
+PeachPuff   #FFDAB9  
+Peru  #CD853F  
+Pink  #FFC0CB 
+/////////////////////////////////////////////////////////////////////////////*/
+.hexFFA500 {
+  background-color: #FFA500;
+  border: 4px solid #000;
+  }
+.hexFF4500 {
+  background-color: #FF4500;
+  border: 4px solid #000;
+  }
+.hexDA70D6 {
+  background-color: #DA70D6;
+  border: 4px solid #000;
+  }
+.hexEEE8AA {
+  background-color: #EEE8AA;
+  border: 4px solid #000;
+  }
+.hex98FB98 {
+  background-color: #98FB98;
+  border: 4px solid #000;
+  }
+.hexAFEEEE {
+  background-color: #AFEEEE;
+  border: 4px solid #000;
+  }
+.hexD87093 {
+  background-color: #D87093;
+  border: 4px solid #000;
+  }
+.hexFFEFD5 {
+  background-color: #FFEFD5;
+  border: 4px solid #000;
+  }
+.hexFFDAB9 {
+  background-color: #FFDAB9;
+  border: 4px solid #000;
+  }
+.hexCD853F {
+  background-color: #CD853F;
+  border: 4px solid #000;
+  }
+.hexFFC0CB {
+  background-color: #FFC0CB;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 11-////////////////////////////
+11
+Plum  #DDA0DD  
+PowderBlue  #B0E0E6  
+Purple  #800080  
+Red   #FF0000  
+RosyBrown   #BC8F8F  
+RoyalBlue   #4169E1  
+SaddleBrown   #8B4513  
+Salmon  #FA8072  
+SandyBrown  #F4A460  
+SeaGreen  #2E8B57  
+SeaShell  #FFF5EE  
+/////////////////////////////////////////////////////////////////////////////*/
+.hexDDA0DD {
+  background-color: #DDA0DD;
+  border: 4px solid #000;
+  }
+.hexB0E0E6 {
+  background-color: #B0E0E6;
+  border: 4px solid #000;
+  }
+.hex800080 {
+  background-color: #800080;
+  border: 4px solid #000;
+  }
+.hexFF0000 {
+  background-color: #FF0000;
+  border: 4px solid #000;
+  }
+.hexBC8F8F {
+  background-color: #BC8F8F;
+  border: 4px solid #000;
+  }
+.hex4169E1 {
+  background-color: #4169E1;
+  border: 4px solid #000;
+  }
+.hex8B4513 {
+  background-color: #8B4513;
+  border: 4px solid #000;
+  }
+.hexFA8072 {
+  background-color: #FA8072;
+  border: 4px solid #000;
+  }
+.hexF4A460 {
+  background-color: #F4A460;
+  border: 4px solid #000;
+  }
+.hex2E8B57 {
+  background-color: #2E8B57;
+  border: 4px solid #000;
+  }
+.hexFFF5EE {
+  background-color: #FFF5EE;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 12-////////////////////////////
+12
+Sienna  #A0522D  
+Silver  #C0C0C0  
+SkyBlue   #87CEEB  
+SlateBlue   #6A5ACD  
+SlateGray   #708090  
+Snow  #FFFAFA  
+SpringGreen   #00FF7F  
+SteelBlue   #4682B4  
+Tan   #D2B48C  
+Teal  #008080  
+Thistle   #D8BFD8  
+/////////////////////////////////////////////////////////////////////////////*/
+.hexA0522D {
+  background-color: #A0522D;
+  border: 4px solid #000;
+  }
+.hexC0C0C0 {
+  background-color: #C0C0C0;
+  border: 4px solid #000;
+  }
+.hex87CEEB {
+  background-color: #87CEEB;
+  border: 4px solid #000;
+  }
+.hex6A5ACD {
+  background-color: #6A5ACD;
+  border: 4px solid #000;
+  }
+.hex708090 {
+  background-color: #708090;
+  border: 4px solid #000;
+  }
+.hexFFFAFA {
+  background-color: #FFFAFA;
+  border: 4px solid #000;
+  }
+.hex00FF7F {
+  background-color: #00FF7F;
+  border: 4px solid #000;
+  }
+.hex4682B4 {
+  background-color: #4682B4;
+  border: 4px solid #000;
+  }
+.hexD2B48C {
+  background-color: #D2B48C;
+  border: 4px solid #000;
+  }
+.hex008080 {
+  background-color: #008080;
+  border: 4px solid #000;
+  }
+.hexD8BFD8 {
+  background-color: #D8BFD8;
+  border: 4px solid #000;
+  }
+
+/* ///////////////////////////140 color names/ROW 13-////////////////////////////
+13
+Tomato  #FF6347  
+Turquoise   #40E0D0  
+Violet  #EE82EE  
+Wheat   #F5DEB3  
+White   #FFFFFF  
+WhiteSmoke  #F5F5F5  
+Yellow  #FFFF00  
+YellowGreen   #9ACD32  
+/////////////////////////////////////////////////////////////////////////////*/
+.hexFF6347 {
+  background-color: #FF6347;
+  border: 4px solid #000;
+  }
+.hex40E0D0 {
+  background-color: #40E0D0;
+  border: 4px solid #000;
+  }
+.hexEE82EE {
+  background-color: #EE82EE;
+  border: 4px solid #000;
+  }
+.hexF5DEB3 {
+  background-color: #F5DEB3;
+  border: 4px solid #000;
+  }
+.hexFFFFFF {
+  background-color: #FFFFFF;
+  border: 4px solid #000;
+  }
+.hexF5F5F5 {
+  background-color: #F5F5F5;
+  border: 4px solid #000;
+  }
+.hexFFFF00 {
+  background-color: #FFFF00;
+  border: 4px solid #000;
+  }
+.hex9ACD32 {
+  background-color: #9ACD32;
+  border: 4px solid #000;
+  }
+/*//////////////////////////////////////THE-END-OF-140-NAMES//////////
+
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+
+///////////////////////////////////--bootstrap.css-colors///////////*/
+
+.hex0d6efd {
+  background-color: #0d6efd;
+  border: 4px solid #000;
+  }
+.hex6c757d {
+  background-color: #6c757d;
+  border: 4px solid #000;
+  }
+.hex198754 {
+  background-color: #198754;
+  border: 4px solid #000;
+  }
+.hex0dcaf0 {
+  background-color: #0dcaf0;
+  border: 4px solid #000;
+  }
+.hexffc107 {
+  background-color: #ffc107;
+  border: 4px solid #000;
+  }
+.hexdc3545 {
+  background-color: #dc3545;
+  border: 4px solid #000;
+  }
+.hexf8f9fa {
+  background-color: #f8f9fa;
+  border: 4px solid #000;
+  }
+.hex212529 {
+  background-color: #212529;
+  border: 4px solid #000;
+  }
+
+/*//////////////////////////////////more/--bootstrap.css-colors///////////
+  --bs-blue: #0d6efd;    above   
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;    above   
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;    above   
+  --bs-green: #198754;    above   
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;    above   
+  --bs-black: #000;    above   
+  --bs-white: #fff;    above   
+  --bs-gray: #6c757d;    above  
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;    above  
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;    above  
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;    above  
+//////////////////////////////////more/--bootstrap.css-colors///////////*/
+/*--bs-indigo*/
+.hex6610f2 {
+  background-color: #6610f2;
+  border: 4px solid #000;
+  }
+/*--bs-purple*/
+.hex6f42c1 {
+  background-color: #6f42c1;
+  border: 4px solid #000;
+  }
+/*--bs-pink*/
+.hexd63384 {
+  background-color: #d63384;
+  border: 4px solid #000;
+  }
+/*--bs-orange*/
+.hexfd7e14 {
+  background-color: #fd7e14;
+  border: 4px solid #000;
+  }
+/*--bs-teal*/
+.hex20c997 {
+  background-color: #20c997;
+  border: 4px solid #000;
+  }
+
+
+/*--bs-gray*/
+
+
+
+/*--bs-gray-dark*/
+.hex343a40 {
+  background-color: #343a40;
+  border: 4px solid #000;
+  }
+/*--bs-gray-100*/
+
+
+
+/*--bs-gray-200*/
+.hexe9ecef {
+  background-color: #e9ecef;
+  border: 4px solid #000;
+  }
+/*--bs-gray-300*/
+.hexdee2e6 {
+  background-color: #dee2e6;
+  border: 4px solid #000;
+  }
+/*--bs-gray-400*/
+.hexced4da {
+  background-color: #ced4da;
+  border: 4px solid #000;
+  }
+/*--bs-gray-500*/
+.hexadb5bd {
+  background-color: #adb5bd;
+  border: 4px solid #000;
+  }
+/*--bs-gray-600*/
+
+
+
+/*--bs-gray-700*/
+.hex495057 {
+  background-color: #495057;
+  border: 4px solid #000;
+  }
+/*--bs-gray-800*/
+.hex343a40 {
+  background-color: #343a40;
+  border: 4px solid #000;
+  }
+/*--bs-gray-900*/
+
+/*//////////////////////////////////more/--various-colors///////////*/
+
+.hexCCCCCC {
+  background-color: #CCCCCC;
+  border: 4px solid #000;
+  }
+.hex00CC00 {
+  background-color: #00CC00;
+  border: 4px solid #000;
+  }
+.hex00CCCC {
+  background-color: #00CCCC;
+  border: 4px solid #000;
+  }
+/*/////////////////////////////////  WINDOWS 11 BG COLORS///////////*/
+
+.hexFF8C00 {
+  background-color: #FF8C00;
+  border: 4px solid #000;
+  }
+.hexE81123 {
+  background-color: #E81123;
+  border: 4px solid #000;
+  }
+.hexD13438 {
+  background-color: #D13438;
+  border: 4px solid #000;
+  }
+.hexC30052 {
+  background-color: #C30052;
+  border: 4px solid #000;
+  }
+.hexBF0077 {
+  background-color: #BF0077;
+  border: 4px solid #000;
+  }
+.hex9A0089 {
+  background-color: #9A0089;
+  border: 4px solid #000;
+  }
+.hex881798 {
+  background-color: #881798;
+  border: 4px solid #000;
+  }
+.hex744DA9 {
+  background-color: #744DA9;
+  border: 4px solid #000;
+  }
+.hex10893E {
+  background-color: #10893E;
+  border: 4px solid #000;
+  }
+.hex107C10 {
+  background-color: #107C10;
+  border: 4px solid #000;
+  }
+.hex018574 {
+  background-color: #018574;
+  border: 4px solid #000;
+  }
+.hex2D7D9A {
+  background-color: #2D7D9A;
+  border: 4px solid #000;
+  }
+.hex0062B1 {
+  background-color: #0062B1;
+  border: 4px solid #000;
+  }
+.hex6B69D6 {
+  background-color: #6B69D6;
+  border: 4px solid #000;
+  }
+.hex8E8CD8 {
+  background-color: #8E8CD8;
+  border: 4px solid #000;
+  }
+.hex8764B8 {
+  background-color: #8764B8;
+  border: 4px solid #000;
+  }
+.hex038387 {
+  background-color: #038387;
+  border: 4px solid #000;
+  }
+.hex486860 {
+  background-color: #486860;
+  border: 4px solid #000;
+  }
+.hex525E54 {
+  background-color: #525E54;
+  border: 4px solid #000;
+  }
+.hex7E735F {
+  background-color: #7E735F;
+  border: 4px solid #000;
+  }
+.hex4C4A48 {
+  background-color: #4C4A48;
+  border: 4px solid #000;
+  }
+.hex515C6B {
+  background-color: #515C6B;
+  border: 4px solid #000;
+  }
+.hex4A5459 {
+  background-color: #4A5459;
+  border: 4px solid #000;
+  }
+
+
