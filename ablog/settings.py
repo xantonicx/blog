@@ -5,8 +5,8 @@ from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -17,8 +17,8 @@ SECRET_KEY = 'django-insecure-1#&ukknk54$==v1)818b9oc2@d+zmssflmx+%j^f5pv9wdvq=u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '192.168.0.151', '192.168.0.186'] 
-
+ALLOWED_HOSTS = ['*', 'web-production-d363.up.railway', 'https://web-production-d363.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-d363.up.railway.app']
 
 # Application definition
 
@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'calc',
     'video',
     'photo',
+    'whitenoise.runserver_nostatic',
    
 
 
@@ -77,8 +78,12 @@ WSGI_APPLICATION = 'ablog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'kqYebjtIBCIwaRjRygNdIkehbPynBsKu',
+        'HOST': 'autorack.proxy.rlwy.net',
+        'PORT': '41260',
     }
 }
 
@@ -125,8 +130,10 @@ MEDIA_URL = '/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-STATICFLIES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+#White noise static stuff
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

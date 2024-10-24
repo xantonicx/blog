@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+body main {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+ul.no-bullets li
+{
+    list-style-type: none !important;
+}
+
+body {
+    background: #212529;
+    border: 3px solid #343a40;
+}
+
+.hex-navbtn {
+  background-color: #212529;
+  border: 1px solid #000000;
+}
+
+.hex-navbar {
+  background-color: #212529;
+  border: 1px solid #343a40;
+}
+
+
+
+.p-5p32 {
+  padding: 32rem !important;
+}
