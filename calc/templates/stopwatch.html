@@ -1,66 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stopwatch</title>
-    <style>
-        #stopwatch {
-            font-size: 48px;
-            margin: 20px;
-        }
-        button {
-            font-size: 24px;
-            margin: 5px;
-        }
-    </style>
-</head>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title_tag }}{% endblock %}
+
+
+
+{% block content %}
+
 <body>
-    <div id="stopwatch">00:00:00</div>
-    <button id="startBtn">Start</button>
-    <button id="stopBtn" disabled>Stop</button>
-    <button id="resetBtn">Reset</button>
+    <h1><div id="stopwatch">00:00:00.00</div></h1>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+    <button id="resetButton">Reset</button>
 
     <script>
-        let timer;
-        let seconds = 0;
+        let seconds = 0; // This will be a floating-point number
+        let interval;
 
         function updateStopwatch() {
             const hours = Math.floor(seconds / 3600);
             const minutes = Math.floor((seconds % 3600) / 60);
-            const secs = seconds % 60;
+            const secs = Math.floor(seconds % 60);
+            const hundredths = Math.floor((seconds % 1) * 100); // Get the hundredths of a second
+
             document.getElementById('stopwatch').innerText =
                 String(hours).padStart(2, '0') + ':' +
                 String(minutes).padStart(2, '0') + ':' +
-                String(secs).padStart(2, '0');
+                String(secs).padStart(2, '0') + '.' +
+                String(hundredths).padStart(2, '0');
         }
 
-        document.getElementById('startBtn').onclick = function() {
-            if (!timer) {
-                timer = setInterval(() => {
-                    seconds++;
-                    updateStopwatch();
-                }, 1000);
-                this.disabled = true;
-                document.getElementById('stopBtn').disabled = false;
-            }
-        };
+        function startStopwatch() {
+            interval = setInterval(() => {
+                seconds += 0.01; // Increment by 0.01 seconds (10 milliseconds)
+                updateStopwatch();
+            }, 10); // Update every 10 milliseconds
+        }
 
-        document.getElementById('stopBtn').onclick = function() {
-            clearInterval(timer);
-            timer = null;
-            document.getElementById('startBtn').disabled = false;
-            this.disabled = true;
-        };
+        function stopStopwatch() {
+            clearInterval(interval);
+        }
 
-        document.getElementById('resetBtn').onclick = function() {
-            clearInterval(timer);
-            timer = null;
+        function resetStopwatch() {
+            clearInterval(interval);
             seconds = 0;
             updateStopwatch();
-            document.getElementById('startBtn').disabled = false;
-            document.getElementById('stopBtn').disabled = true;
-        };
+        }
+
+        document.getElementById('startButton').addEventListener('click', startStopwatch);
+        document.getElementById('stopButton').addEventListener('click', stopStopwatch);
+        document.getElementById('resetButton').addEventListener('click', resetStopwatch);
     </script>
 </body>
-</html>
+
+{% endblock %}

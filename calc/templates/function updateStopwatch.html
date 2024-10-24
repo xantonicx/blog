@@ -1,0 +1,13 @@
+function updateStopwatch() {
+    const totalSeconds = seconds; // Assuming 'seconds' is a floating-point number
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const secs = Math.floor(totalSeconds % 60);
+    const hundredths = Math.floor((totalSeconds % 1) * 100); // Get the hundredths of a second
+
+    document.getElementById('stopwatch').innerText =
+        String(hours).padStart(2, '0') + ':' +
+        String(minutes).padStart(2, '0') + ':' +
+        String(secs).padStart(2, '0') + '.' +
+        String(hundredths).padStart(2, '0'); // Add hundredths with 2 decimal places
+}

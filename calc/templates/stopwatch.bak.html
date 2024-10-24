@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title_tag }}{% endblock %}
+
+
+
+{% block content %}
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        #stopwatch {
+            font-size: 48px;
+            margin: 20px;
+        }
+        button {
+            font-size: 24px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="stopwatch">00:00:00</div>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn" disabled>Stop</button>
+    <button id="resetBtn">Reset</button>
+
+    <script>
+        let timer;
+        let seconds = 0;
+
+        function updateStopwatch() {
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = seconds % 60;
+            document.getElementById('stopwatch').innerText =
+                String(hours).padStart(2, '0') + ':' +
+                String(minutes).padStart(2, '0') + ':' +
+                String(secs).padStart(2, '0');
+        }
+
+        document.getElementById('startBtn').onclick = function() {
+            if (!timer) {
+                timer = setInterval(() => {
+                    seconds++;
+                    updateStopwatch();
+                }, 1000);
+                this.disabled = true;
+                document.getElementById('stopBtn').disabled = false;
+            }
+        };
+
+        document.getElementById('stopBtn').onclick = function() {
+            clearInterval(timer);
+            timer = null;
+            document.getElementById('startBtn').disabled = false;
+            this.disabled = true;
+        };
+
+        document.getElementById('resetBtn').onclick = function() {
+            clearInterval(timer);
+            timer = null;
+            seconds = 0;
+            updateStopwatch();
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('stopBtn').disabled = true;
+        };
+    </script>
+</body>
+
+
+{% endblock %}

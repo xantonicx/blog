@@ -1,16 +1,5 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %}{{ post.title_tag }}{% endblock %}
-
-
-
-{% block content %}
-
-
-
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +13,6 @@
     </style>
 </head>
 <body>
-    <h3>Central Time Zone</h3>
     <div id="clock">00:00:00</div>
 
     <script>
@@ -40,6 +28,4 @@
         updateClock(); // Initial call to display clock immediately
     </script>
 </body>
-
-
-{% endblock %}
+</html>
