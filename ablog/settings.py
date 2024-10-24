@@ -1,6 +1,5 @@
 
 import os
-import django_heroku
 import dj_database_url
 from decouple import config
 from pathlib import Path
@@ -18,7 +17,7 @@ SECRET_KEY = 'django-insecure-1#&ukknk54$==v1)818b9oc2@d+zmssflmx+%j^f5pv9wdvq=u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.151', '192.168.0.186'] 
+ALLOWED_HOSTS = ['*', '192.168.0.151', '192.168.0.186'] 
 
 
 # Application definition
@@ -137,5 +136,4 @@ LOGIN_REDIRECT_URL = 'home'
 
 LOGOUT_REDIRECT_URL = 'home'
 
-django_heroku.settings(locals())
 
